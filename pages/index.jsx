@@ -5,7 +5,7 @@ const benefits = [
   {
     char: '隨意',
     title: '完全版，無限制',
-    description: '解鎖 NotebookLM 完整功能、ChatGPT 進階模型、Suno 音樂生成——不受地區限制，教學功能盡情發揮。',
+    description: '接通各大 AI 工具完整功能——不受地區限制，教學功能盡情發揮。',
   },
   {
     char: '隨地',
@@ -24,19 +24,13 @@ const benefits = [
   },
 ]
 
-const tools = [
-  { name: 'Google NotebookLM', filename: 'logo-notebooklm.png' },
-  { name: 'ChatGPT', filename: 'logo-chatgpt.png' },
-  { name: 'Suno', filename: 'logo-suno.png' },
-  { name: 'Google AI Studio', filename: 'logo-aistudio.png' },
-]
 
 export default function Home() {
   return (
     <Layout title="Magic Door — AI隨意門｜打破地區限制">
 
       {/* Hero */}
-      <section className="pt-24 pb-20 px-6 text-center">
+      <section className="pt-16 pb-10 px-6 text-center">
         <div className="max-w-4xl mx-auto">
 
           {/* Logo */}
@@ -48,40 +42,16 @@ export default function Home() {
             AI工具<br />一門即達
           </h1>
           <p className="text-xl text-gray-500 mb-10 max-w-xl mx-auto leading-relaxed">
-            非VPN方式<br />即時接通熱門AI工具
+            非VPN方式<br />即時接通熱門AI工具<sup className="text-sm">*</sup>
           </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <a
-              href="mailto:info@magicdoor.cc"
-              className="inline-flex items-center justify-center px-8 py-4 bg-indigo-600 text-white font-semibold rounded-xl hover:bg-indigo-700 transition-colors text-base"
-            >
-              聯絡我們
-            </a>
-          </div>
-        </div>
-      </section>
-
-      {/* Supported Tools */}
-      <section className="py-14 px-6 border-y border-gray-100 bg-gray-50">
-        <div className="max-w-4xl mx-auto">
-          <p className="text-center text-xs text-gray-400 mb-8 uppercase tracking-widest font-medium">
-            已支援 AI 工具
+          <p className="text-xs text-gray-400 mt-6 max-w-sm mx-auto leading-relaxed">
+            * 客戶請在購買前先行測試並確認 Magic Door 是否支援所需之AI 工具
           </p>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {tools.map((tool) => (
-              <div key={tool.name} className="flex flex-col items-center gap-3">
-                <div className="border-2 border-dashed border-gray-200 rounded-xl bg-white flex items-center justify-center w-full h-14">
-                  <span className="text-xs font-mono text-gray-400">{tool.filename}</span>
-                </div>
-                <span className="text-sm text-gray-500 text-center">{tool.name}</span>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 
       {/* Benefits */}
-      <section className="py-24 px-6">
+      <section className="py-12 px-6">
         <div className="max-w-5xl mx-auto">
           <div className="grid md:grid-cols-2 gap-6">
             {benefits.map((benefit) => (
@@ -102,10 +72,10 @@ export default function Home() {
       <section className="py-24 px-6 bg-gray-900 text-center">
         <div className="max-w-2xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-black text-white mb-4 leading-tight">
-            距離AI工具自由，<br />只剩一門之隔。
+            距離AI工具自由<br />只剩一門之隔
           </h2>
           <p className="text-gray-400 mb-10 text-lg leading-relaxed">
-            立即為學校安裝 Magic Door，讓老師專注教學，AI 負責其餘。
+            立即使用 Magic Door
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link

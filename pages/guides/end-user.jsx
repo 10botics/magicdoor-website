@@ -25,8 +25,8 @@ const steps = [
   },
   {
     title: '前往 AI 工具正常使用',
-    description: '連線後，直接在瀏覽器開啟 notebooklm.google.com、chatgpt.com、suno.com 或 aistudio.google.com，即可正常使用完全版功能。',
-    image: { filename: 'guides/user-05-using.png', description: 'NotebookLM 在連線後正常載入的畫面' },
+    description: '連線後，直接在瀏覽器開啟所需的 AI 工具網址，即可正常使用完全版功能。',
+    image: { filename: 'guides/user-05-using.png', description: 'AI 工具在連線後正常載入的畫面' },
   },
   {
     title: '使用完畢後中斷連線',
@@ -57,17 +57,10 @@ export default function EndUserGuide() {
             連線及使用<br />AI 工具
           </h1>
           <p className="text-lg text-gray-500 leading-relaxed">
-            Magic Door 安裝後，只需簡單幾步即可接通 NotebookLM、ChatGPT、Suno 等 AI 工具的完全版。
+            Magic Door 安裝後，只需簡單幾步即可接通各大 AI 工具的完全版。
           </p>
         </div>
 
-        {/* Supported tools reminder */}
-        <div className="mb-12 p-5 rounded-xl bg-indigo-50 border border-indigo-100">
-          <p className="text-sm font-semibold text-indigo-700 mb-1">已支援 AI 工具</p>
-          <p className="text-sm text-indigo-600">
-            Google NotebookLM · ChatGPT · Suno · Google AI Studio
-          </p>
-        </div>
 
         {/* Steps */}
         <div className="space-y-14">
@@ -89,28 +82,11 @@ export default function EndUserGuide() {
           ))}
         </div>
 
-        {/* FAQ-style notes */}
-        <div className="mt-14 space-y-4">
-          <h3 className="text-sm font-medium text-gray-400 uppercase tracking-widest mb-6">常見問題</h3>
-          {[
-            {
-              q: '連線後速度會受影響嗎？',
-              a: 'Magic Door 只代理必要的 AI 工具流量，其他網站（Gmail、Google Drive 等）仍直接連線，速度不受影響。',
-            },
-            {
-              q: '連線時間到了會怎樣？',
-              a: '時限屆滿後，AI 工具頁面會顯示地區不支援的提示，您的其他瀏覽不受影響。重新點擊 Magic Door 切換開關即可再次連線。',
-            },
-            {
-              q: '只支援電腦嗎？',
-              a: '目前 Magic Door 僅支援電腦版 Chrome 瀏覽器，未能在手機或平板電腦上使用。',
-            },
-          ].map((faq, i) => (
-            <div key={i} className="p-5 rounded-xl border border-gray-100">
-              <p className="font-semibold text-gray-900 mb-2">{faq.q}</p>
-              <p className="text-sm text-gray-500 leading-relaxed">{faq.a}</p>
-            </div>
-          ))}
+        {/* FAQ link */}
+        <div className="mt-14 pt-10 border-t border-gray-100">
+          <Link href="/faq" className="text-sm text-indigo-600 hover:underline">
+            常見問題 →
+          </Link>
         </div>
 
       </div>

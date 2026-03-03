@@ -5,6 +5,7 @@ const navLinks = [
   { href: '/guides/it-admin', label: 'IT管理指南' },
   { href: '/guides/subscription', label: '訂閱管理' },
   { href: '/guides/end-user', label: '使用說明' },
+  { href: '/faq', label: '常見問題' },
   { href: '/terms', label: '條款' },
 ]
 
