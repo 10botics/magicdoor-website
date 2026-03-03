@@ -21,7 +21,7 @@ export default function Layout({ children, title = 'Magic Door — AI隨意門',
         <meta property="og:description" content={description} />
         <meta property="og:url" content={canonicalUrl} />
         <meta property="og:type" content="website" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/icon2.svg" type="image/svg+xml" />
       </Head>
       <div className="min-h-screen flex flex-col font-sans bg-white text-gray-900">
         <Header />

@@ -41,27 +41,19 @@ export default function Home() {
 
           {/* Logo */}
           <div className="flex justify-center mb-10">
-            <div className="border-2 border-dashed border-gray-200 rounded-2xl bg-gray-50 flex flex-col items-center justify-center w-24 h-24">
-              <p className="text-xs font-mono text-gray-400">logo.png</p>
-            </div>
+            <img src="/icon2.svg" alt="Magic Door" className="w-24 h-24" />
           </div>
 
           <h1 className="text-5xl md:text-7xl font-black text-gray-900 leading-tight mb-6 tracking-tight">
-            AI工具自由，<br />一門即達。
+            AI工具<br />一門即達
           </h1>
           <p className="text-xl text-gray-500 mb-10 max-w-xl mx-auto leading-relaxed">
-            非VPN方式打破地區界限，讓香港學校即時接通 NotebookLM、ChatGPT、Suno 完全版。
+            非VPN方式<br />即時接通熱門AI工具
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a
-              href="#"
-              className="inline-flex items-center justify-center px-8 py-4 bg-indigo-600 text-white font-semibold rounded-xl hover:bg-indigo-700 transition-colors text-base"
-            >
-              安裝 Chrome 擴充功能
-            </a>
-            <a
               href="mailto:info@magicdoor.cc"
-              className="inline-flex items-center justify-center px-8 py-4 border border-gray-200 text-gray-700 font-semibold rounded-xl hover:bg-gray-50 transition-colors text-base"
+              className="inline-flex items-center justify-center px-8 py-4 bg-indigo-600 text-white font-semibold rounded-xl hover:bg-indigo-700 transition-colors text-base"
             >
               聯絡我們
             </a>

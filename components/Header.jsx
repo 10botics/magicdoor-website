@@ -14,8 +14,9 @@ export default function Header() {
   return (
     <header className="border-b border-gray-100 bg-white sticky top-0 z-50">
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-        <Link href="/" className="font-bold text-lg text-gray-900 tracking-tight">
-          Magic Door
+        <Link href="/" className="flex items-center gap-2">
+          <img src="/icon2.svg" alt="Magic Door" className="w-8 h-8" />
+          <span className="font-bold text-lg text-gray-900 tracking-tight">Magic Door</span>
         </Link>
 
         <nav className="hidden md:flex items-center gap-8 text-sm text-gray-500">

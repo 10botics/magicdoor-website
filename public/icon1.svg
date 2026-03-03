@@ -1,0 +1,22 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="starGrad" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="scale(60)">
+      <stop offset="0" stop-color="#A7E9E8"/>
+      <stop offset="1" stop-color="#E0F9F9"/>
+    </radialGradient>
+  </defs>
+  <rect x="96" y="26" width="320" height="460" rx="40" fill="#1A2130"/>
+  <rect x="126" y="56" width="260" height="140" rx="15" fill="#252F44"/>
+  <rect x="126" y="316" width="260" height="140" rx="15" fill="#252F44"/>
+  <rect x="156" y="206" width="200" height="100" rx="50" fill="white"/>
+  <circle cx="306" cy="256" r="42" fill="#6ABFE1"/>
+  <g transform="translate(436, 86)">
+    <path d="M 0 -60 Q 0 0 60 0 Q 0 0 0 60 Q 0 0 -60 0 Q 0 0 0 -60 Z" fill="url(#starGrad)"/>
+  </g>
+  <g transform="translate(76, 146)">
+    <path d="M 0 -30 Q 0 0 30 0 Q 0 0 0 30 Q 0 0 -30 0 Q 0 0 0 -30 Z" fill="url(#starGrad)"/>
+  </g>
+  <g transform="translate(376, 326)">
+    <path d="M 0 -25 Q 0 0 25 0 Q 0 0 0 25 Q 0 0 -25 0 Q 0 0 0 -25 Z" fill="url(#starGrad)"/>
+  </g>
+</svg>

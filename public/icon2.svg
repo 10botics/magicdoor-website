@@ -1,0 +1,28 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="starGrad" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="scale(60)">
+      <stop offset="0" stop-color="#FDE047"/>
+      <stop offset="1" stop-color="#FEF08A"/>
+    </radialGradient>
+  </defs>
+  <!-- Door Body -->
+  <rect x="116" y="26" width="280" height="460" rx="40" fill="#1A2130" stroke="white" stroke-width="6"/>
+  
+  <!-- Single Panel -->
+  <rect x="141" y="51" width="230" height="410" rx="15" fill="#2D3A58"/>
+  
+  <!-- Toggle Handle -->
+  <rect x="216" y="216" width="160" height="80" rx="40" fill="white"/>
+  <circle cx="336" cy="256" r="32" fill="#6ABFE1"/>
+
+  <!-- Stars -->
+  <g transform="translate(411, 86)">
+    <path d="M 0 -55 Q 0 0 55 0 Q 0 0 0 55 Q 0 0 -55 0 Q 0 0 0 -55 Z" fill="url(#starGrad)"/>
+  </g>
+  <g transform="translate(96, 166)">
+    <path d="M 0 -30 Q 0 0 30 0 Q 0 0 0 30 Q 0 0 -30 0 Q 0 0 0 -30 Z" fill="url(#starGrad)"/>
+  </g>
+  <g transform="translate(396, 316)">
+    <path d="M 0 -25 Q 0 0 25 0 Q 0 0 0 25 Q 0 0 -25 0 Q 0 0 0 -25 Z" fill="url(#starGrad)"/>
+  </g>
+</svg>
