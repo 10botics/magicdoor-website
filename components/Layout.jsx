@@ -5,7 +5,7 @@ import Footer from './Footer'
 
 const SITE_URL = 'https://www.magicdoor.cc'
 
-export default function Layout({ children, title = 'Magic Door — AI隨意門', description = '非VPN方式打破地區界限，讓香港學校即時接通 NotebookLM、ChatGPT、Suno 完全版。' }) {
+export default function Layout({ children, title = 'Magic Door — AI隨意門', description = '非VPN方式，即時接通熱門AI工具' }) {
   const { asPath } = useRouter()
   const canonicalUrl = `${SITE_URL}${asPath === '/' ? '' : asPath}`
 
