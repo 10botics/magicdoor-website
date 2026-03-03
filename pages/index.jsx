@@ -27,7 +27,7 @@ const benefits = [
 
 export default function Home() {
   return (
-    <Layout title="Magic Door AI隨意門 — AI工具 一門即達">
+    <Layout title="Magic Door — AI工具 一門即達">
 
       {/* Hero */}
       <section className="pt-16 pb-10 px-6 text-center">
