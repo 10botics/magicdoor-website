@@ -14,7 +14,7 @@ const benefits = [
   {
     char: '隨時',
     title: 'AI隨身自主工時',
-    description: '只要電腦在手，不論課間、課後都可以處理工作，效率翻倍。',
+    description: '只要電腦在手，不論課間在校或課後居家辦公，都可以即時處理工作，效率翻倍。',
   },
   {
     char: '隨心',
@@ -52,7 +52,7 @@ export default function Home() {
         <div className="max-w-5xl mx-auto">
           <div className="w-full h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent mb-12 md:mb-14" />
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-6xl font-black text-gray-900 tracking-tight">四大教學優勢</h2>
+            <h2 className="text-4xl md:text-6xl font-black text-gray-900 tracking-tight">四大優勢</h2>
           </div>
 
           <div className="grid md:grid-cols-2 gap-5 md:gap-6">
@@ -133,6 +133,9 @@ export default function Home() {
 
       {/* Anytime deployment */}
       <section id="anytime" className="py-24 px-8 md:px-12 lg:px-20">
+        <div className="max-w-7xl mx-auto mb-12">
+          <div className="h-px bg-gradient-to-r from-transparent via-white/35 to-transparent" />
+        </div>
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 items-center">
           <div>
             <div className="inline-flex items-center gap-3 bg-[#00bbde]/20 border border-[#00bbde]/60 px-4 py-2.5 mb-5 rounded-xl shadow-lg shadow-cyan-900/20">
@@ -213,7 +216,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a
               href="mailto:info@magicdoor.cc"
-              className="inline-flex items-center justify-center px-10 py-5 bg-white text-gray-900 text-lg font-semibold rounded-xl hover:bg-gray-100 transition-colors"
+              className="inline-flex items-center justify-center px-12 py-5 bg-white text-gray-900 text-xl font-semibold rounded-xl hover:bg-gray-100 transition-colors"
             >
               查詢報價
             </a>

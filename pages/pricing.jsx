@@ -6,6 +6,7 @@ const individualPlans = [
     name: '基礎',
     connectionLimit: '1 小時',
     dailyLimit: '3 小時',
+    deviceLimit: '1 個',
     teacherPrice: 'HK$150',
     studentPrice: 'HK$60',
     featured: false,
@@ -14,9 +15,19 @@ const individualPlans = [
     name: '進階',
     connectionLimit: '2 小時',
     dailyLimit: '6 小時',
+    deviceLimit: '1 個',
     teacherPrice: 'HK$225',
     studentPrice: 'HK$90',
-    featured: true,
+    featured: false,
+  },
+  {
+    name: '終極',
+    connectionLimit: '2 小時',
+    dailyLimit: '20 小時',
+    deviceLimit: '5 個',
+    unifiedPrice: 'HK$699',
+    featured: false,
+    badge: '高用量首選',
   },
 ]
 
@@ -36,30 +47,38 @@ export default function Pricing() {
         <section className="mb-14">
           <h1 className="text-4xl font-black text-brand-text mb-3">方案與收費</h1>
           <p className="text-brand-muted leading-relaxed max-w-2xl">
-            為學校與機構提供清晰、易管理的年度方案。歡迎聯絡我們安排報價與部署。
+            為學校與機構提供清晰易明、方便管理的年度方案，歡迎聯絡我們安排報價與部署。
           </p>
         </section>
 
-        <section className="grid md:grid-cols-2 gap-6 mb-16">
+        <section className="grid md:grid-cols-2 lg:grid-cols-[0.8fr_0.8fr_1.4fr] gap-6 mb-16 items-stretch">
           {individualPlans.map((plan) => (
             <div
               key={plan.name}
-              className={`rounded-3xl border p-8 ${
-                plan.featured
-                  ? 'bg-gray-900 text-white border-gray-900'
-                  : 'bg-white border-gray-100'
+              className={`rounded-3xl border ${
+                plan.name === '基礎'
+                  ? 'bg-slate-50 border-slate-200 p-6 md:p-7 text-slate-800'
+                  : plan.name === '進階'
+                  ? 'bg-indigo-900 border-indigo-900 p-6 md:p-7 text-white'
+                  : 'bg-gradient-to-br from-cyan-600 to-indigo-700 border-cyan-400/70 p-9 md:p-10 text-white shadow-2xl lg:scale-[1.03]'
               }`}
             >
               <div className="flex items-center justify-between mb-6">
-                <h2 className="text-2xl font-black">{plan.name}</h2>
-                {plan.featured && (
-                  <span className="text-xs font-semibold px-3 py-1 rounded-full bg-brand-primary/20 text-brand-primarySoft">
-                    進階首選
+                <h2 className={`${plan.name === '終極' ? 'text-3xl' : 'text-2xl'} font-black`}>{plan.name}</h2>
+                {plan.badge && (
+                  <span className={`font-semibold rounded-full ${
+                    plan.name === '基礎'
+                      ? 'text-xs px-3 py-1 bg-white text-slate-600'
+                      : plan.name === '進階'
+                      ? 'text-xs px-3 py-1 bg-brand-primary/20 text-brand-primarySoft'
+                      : 'text-sm px-4 py-1.5 bg-white/20 text-white'
+                  }`}>
+                    {plan.badge}
                   </span>
                 )}
               </div>
 
-              <div className={`space-y-3 text-sm ${plan.featured ? 'text-gray-200' : 'text-gray-600'}`}>
+              <div className={`space-y-3 ${plan.name === '終極' ? 'text-base' : 'text-sm'} ${plan.name === '基礎' ? 'text-slate-600' : 'text-gray-200'}`}>
                 <div className="flex items-center justify-between border-b border-current/10 pb-2">
                   <span>連線時限</span>
                   <span className="font-bold">{plan.connectionLimit}</span>
@@ -68,23 +87,37 @@ export default function Pricing() {
                   <span>每日上限</span>
                   <span className="font-bold">{plan.dailyLimit}</span>
                 </div>
+                <div className="flex items-center justify-between border-b border-current/10 pb-2">
+                  <span>連接設備上限</span>
+                  <span className="font-bold">{plan.deviceLimit}</span>
+                </div>
               </div>
 
-              <div className={`mt-8 mb-8 rounded-2xl border p-4 ${plan.featured ? 'border-white/15 bg-white/5' : 'border-gray-100 bg-gray-50'}`}>
-                <div className="flex items-center justify-between py-2 border-b border-current/10">
-                  <span className={plan.featured ? 'text-gray-300' : 'text-gray-500'}>老師</span>
-                  <span className={`font-bold ${plan.featured ? 'text-white' : 'text-brand-primaryDark'}`}>
-                    {plan.teacherPrice}
-                    <span className={`ml-1 text-xs font-medium ${plan.featured ? 'text-gray-300' : 'text-gray-500'}`}>/ 人 / 年</span>
-                  </span>
-                </div>
-                <div className="flex items-center justify-between py-2">
-                  <span className={plan.featured ? 'text-gray-300' : 'text-gray-500'}>學生</span>
-                  <span className={`font-bold ${plan.featured ? 'text-white' : 'text-brand-primaryDark'}`}>
-                    {plan.studentPrice}
-                    <span className={`ml-1 text-xs font-medium ${plan.featured ? 'text-gray-300' : 'text-gray-500'}`}>/ 人 / 年</span>
-                  </span>
-                </div>
+              <div className={`mt-8 mb-2 rounded-2xl border p-4 ${plan.name === '基礎' ? 'border-slate-200 bg-white' : 'border-white/20 bg-white/10'}`}>
+                {plan.unifiedPrice ? (
+                  <div className="py-2 text-center">
+                    <span className={`font-black text-3xl md:text-4xl leading-none whitespace-nowrap ${plan.name === '基礎' ? 'text-brand-primaryDark' : 'text-white'}`}>
+                      劃一{plan.unifiedPrice}/ 年
+                    </span>
+                  </div>
+                ) : (
+                  <>
+                    <div className="flex items-center justify-between py-2 border-b border-current/10">
+                      <span className={plan.name === '基礎' ? 'text-slate-500' : 'text-gray-300'}>老師</span>
+                      <span className={`font-bold ${plan.name === '基礎' ? 'text-brand-primaryDark' : 'text-white'}`}>
+                        {plan.teacherPrice}
+                        <span className={`ml-1 text-xs font-medium ${plan.name === '基礎' ? 'text-slate-500' : 'text-gray-300'}`}>/ 人 / 年</span>
+                      </span>
+                    </div>
+                    <div className="flex items-center justify-between py-2">
+                      <span className={plan.name === '基礎' ? 'text-slate-500' : 'text-gray-300'}>學生</span>
+                      <span className={`font-bold ${plan.name === '基礎' ? 'text-brand-primaryDark' : 'text-white'}`}>
+                        {plan.studentPrice}
+                        <span className={`ml-1 text-xs font-medium ${plan.name === '基礎' ? 'text-slate-500' : 'text-gray-300'}`}>/ 人 / 年</span>
+                      </span>
+                    </div>
+                  </>
+                )}
               </div>
             </div>
           ))}
@@ -93,9 +126,9 @@ export default function Pricing() {
         <div className="flex justify-center">
           <a
             href="mailto:info@magicdoor.cc?subject=Magic%20Door%20%E6%8A%A5%E5%83%B9%E6%9F%A5%E8%A9%A2"
-            className="inline-flex items-center justify-center px-8 py-3 rounded-xl bg-brand-primaryDark hover:bg-brand-primary text-white font-semibold transition-colors"
+            className="inline-flex items-center justify-center px-12 py-5 text-xl rounded-xl bg-brand-primaryDark hover:bg-brand-primary text-white font-semibold transition-colors"
           >
-            查詢及報價
+            查詢報價
           </a>
         </div>
       </div>
