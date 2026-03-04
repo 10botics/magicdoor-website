@@ -10,7 +10,7 @@ const benefits = [
   {
     char: '隨地',
     title: '非VPN，隨地接通',
-    description: '無需 VPN 設定，無需 IT 技術知識。安裝後一鍵連線，在任何網絡環境下即可使用。',
+    description: '無論在家或在學校，安裝後一鍵連線，隨時隨地即可使用。',
   },
   {
     char: '隨時',
