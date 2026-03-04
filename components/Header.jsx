@@ -48,6 +48,7 @@ export default function Header() {
                 <Link 
                   key={link.href} 
                   href={link.href}
+                  prefetch={false}
                   className="block px-4 py-2 hover:bg-gray-50 hover:text-gray-900 transition-colors"
                 >
                   {link.label}
@@ -85,7 +86,7 @@ export default function Header() {
             <div className="h-px bg-gray-100 my-1"></div>
             <div className="font-medium text-gray-400 uppercase tracking-widest text-[10px] mb-1">用戶專區</div>
             {guideLinks.map((link) => (
-              <Link key={link.href} href={link.href} onClick={() => setMenuOpen(false)} className="hover:text-gray-900 pl-2">
+              <Link key={link.href} href={link.href} prefetch={false} onClick={() => setMenuOpen(false)} className="hover:text-gray-900 pl-2">
                 {link.label}
               </Link>
             ))}
