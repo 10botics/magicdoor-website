@@ -78,15 +78,9 @@ export default function Home() {
             立即使用 Magic Door
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Link
-              href="/guides/it-admin"
-              className="inline-flex items-center justify-center px-8 py-4 bg-white text-gray-900 font-semibold rounded-xl hover:bg-gray-100 transition-colors"
-            >
-              IT管理員安裝指南 →
-            </Link>
             <a
               href="mailto:info@magicdoor.cc"
-              className="inline-flex items-center justify-center px-8 py-4 border border-gray-700 text-white font-semibold rounded-xl hover:border-gray-500 transition-colors"
+              className="inline-flex items-center justify-center px-8 py-4 bg-white text-gray-900 font-semibold rounded-xl hover:bg-gray-100 transition-colors"
             >
               查詢及報價
             </a>

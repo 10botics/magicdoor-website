@@ -10,7 +10,7 @@ export default function Footer() {
           <Link href="/guides/subscription" className="hover:text-gray-700 transition-colors">訂閱管理</Link>
           <Link href="/guides/end-user" className="hover:text-gray-700 transition-colors">使用說明</Link>
           <Link href="/faq" className="hover:text-gray-700 transition-colors">常見問題</Link>
-          <Link href="/terms" className="hover:text-gray-700 transition-colors">條款</Link>
+          <Link href="/terms" className="hover:text-gray-700 transition-colors">服務條款</Link>
         </nav>
       </div>
     </footer>

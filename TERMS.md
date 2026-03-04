@@ -23,7 +23,7 @@ Users must not:
 Violations may result in immediate termination of access without refund.
 
 ### 4. Privacy Policy
-The Service collects only the minimum data required to operate, including the user's email address and IP address at the time of connection. This data is used solely for identity verification and session management, and is never sold or shared with third parties. Connection sessions and traffic are end-to-end encrypted. 10botics does not log or review user activity within AI tools.
+The Service collects only the minimum data required to operate, including the user's email address and IP address at the time of connection. Connection sessions are encrypted using industry-standard protocols. 10botics preserves basic traffic logs (such as timestamps, data volume, and domains accessed) for security purposes and to ensure compliance with local laws and regulations. However, 10botics does not log, store, or have the technical ability to review the specific content of your interactions (such as prompts or responses) within the AI tools. 10botics will never sell or share your data with third parties.
 
 ### 5. Service Availability and Disclaimer
 The Service is provided "as is". 10botics does not guarantee uninterrupted or error-free availability. The Service may be temporarily unavailable due to maintenance, technical issues, or changes made by third-party AI platforms. 
