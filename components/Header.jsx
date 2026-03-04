@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { useState } from 'react'
 
 const navLinks = [
+  { href: '/', label: '首頁' },
   { href: '/faq', label: '常見問題' },
   { href: '/terms', label: '服務條款' },
 ]
