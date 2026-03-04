@@ -6,8 +6,15 @@ const navLinks = [
   { href: '/terms', label: '服務條款' },
 ]
 
+const guideLinks = [
+  { href: '/guides/it-admin', label: 'IT管理指南' },
+  { href: '/guides/subscription', label: '訂閱管理' },
+  { href: '/guides/end-user', label: '使用說明' },
+]
+
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
+  const [guidesOpen, setGuidesOpen] = useState(false)
 
   return (
     <header className="border-b border-gray-100 bg-white sticky top-0 z-50">
@@ -23,6 +30,31 @@ export default function Header() {
               {link.label}
             </Link>
           ))}
+
+          <div 
+            className="relative group py-4"
+            onMouseEnter={() => setGuidesOpen(true)}
+            onMouseLeave={() => setGuidesOpen(false)}
+          >
+            <button className="flex items-center gap-1 hover:text-gray-900 transition-colors">
+              用戶專區
+              <svg className={`w-4 h-4 transition-transform ${guidesOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            
+            <div className={`absolute top-full right-0 w-48 bg-white border border-gray-100 rounded-xl shadow-lg py-2 transition-all ${guidesOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'}`}>
+              {guideLinks.map((link) => (
+                <Link 
+                  key={link.href} 
+                  href={link.href}
+                  className="block px-4 py-2 hover:bg-gray-50 hover:text-gray-900 transition-colors"
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
+          </div>
         </nav>
 
         <button
@@ -47,6 +79,13 @@ export default function Header() {
           <nav className="flex flex-col px-6 py-4 gap-4 text-sm text-gray-600">
             {navLinks.map((link) => (
               <Link key={link.href} href={link.href} onClick={() => setMenuOpen(false)} className="hover:text-gray-900">
+                {link.label}
+              </Link>
+            ))}
+            <div className="h-px bg-gray-100 my-1"></div>
+            <div className="font-medium text-gray-400 uppercase tracking-widest text-[10px] mb-1">用戶專區</div>
+            {guideLinks.map((link) => (
+              <Link key={link.href} href={link.href} onClick={() => setMenuOpen(false)} className="hover:text-gray-900 pl-2">
                 {link.label}
               </Link>
             ))}

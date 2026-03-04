@@ -35,7 +35,7 @@ export default function Home() {
 
           {/* Logo */}
           <div className="flex justify-center mb-10">
-            <img src="/icon2.svg" alt="Magic Door" className="w-24 h-24" />
+            <img src="/icon2.svg" alt="Magic Door" className="w-48 h-48" />
           </div>
 
           <h1 className="text-5xl md:text-7xl font-black text-gray-900 leading-tight mb-6 tracking-tight">
