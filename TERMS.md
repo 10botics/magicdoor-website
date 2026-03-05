@@ -50,6 +50,8 @@ Subscription fees, billing cycles, and payment terms are governed by the specifi
 
 8.5 **Tools Outside Scope:** Any third-party AI tool not included in the Customer's Approved Tools is outside the Service compatibility commitment and is not eligible for remedies under this Section 8.
 
+8.6 **Geo-restriction Removal:** In the event that a third-party AI tool removes or lifts its geo-restriction such that the tool becomes directly accessible without Magic Door, this does not constitute service incompatibility within the meaning of Section 8.2. No refund shall be payable in such circumstances. Magic Door's service obligation is limited to providing a gateway for accessing geo-restricted tools; the continuation or removal of any third-party platform's geo-restriction policy is beyond the control of 10Botics Ltd and does not affect the validity of the subscription.
+
 ### 9. Changes to These Terms
 10Botics Ltd reserves the right to update these Terms at any time. Subscription administrators will be notified by email when changes are made. Continued use of the Service after changes take effect constitutes acceptance of the updated Terms.
 
