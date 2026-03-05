@@ -4,6 +4,7 @@ import Link from 'next/link'
 const individualPlans = [
   {
     name: '基礎',
+    englishName: 'Basic',
     connectionLimit: '1 小時',
     dailyLimit: '3 小時',
     deviceLimit: '1 個',
@@ -13,6 +14,7 @@ const individualPlans = [
   },
   {
     name: '進階',
+    englishName: 'Plus',
     connectionLimit: '2 小時',
     dailyLimit: '6 小時',
     deviceLimit: '1 個',
@@ -22,6 +24,7 @@ const individualPlans = [
   },
   {
     name: '終極',
+    englishName: 'Max',
     connectionLimit: '2 小時',
     dailyLimit: '20 小時',
     deviceLimit: '5 個',
@@ -64,7 +67,12 @@ export default function Pricing() {
               }`}
             >
               <div className="flex items-center justify-between mb-6">
-                <h2 className={`${plan.name === '終極' ? 'text-3xl' : 'text-2xl'} font-black`}>{plan.name}</h2>
+                <h2 className={`${plan.name === '終極' ? 'text-3xl' : 'text-2xl'} font-black`}>
+                  {plan.name}
+                  <span className={`ml-2 align-middle font-semibold ${plan.name === '基礎' ? 'text-slate-500' : 'text-gray-200'} ${plan.name === '終極' ? 'text-xl' : 'text-lg'}`}>
+                    {plan.englishName}
+                  </span>
+                </h2>
                 {plan.badge && (
                   <span className={`font-semibold rounded-full ${
                     plan.name === '基礎'
@@ -88,7 +96,7 @@ export default function Pricing() {
                   <span className="font-bold">{plan.dailyLimit}</span>
                 </div>
                 <div className="flex items-center justify-between border-b border-current/10 pb-2">
-                  <span>連接設備上限</span>
+                  <span>同時連線設備上限</span>
                   <span className="font-bold">{plan.deviceLimit}</span>
                 </div>
               </div>
@@ -119,13 +127,18 @@ export default function Pricing() {
                   </>
                 )}
               </div>
+              {plan.name === '終極' && (
+                <p className="mt-3 text-xs text-white/80">
+                  *最適合電腦室或學校圖書館等公用電腦環境
+                </p>
+              )}
             </div>
           ))}
         </section>
 
         <div className="flex justify-center">
           <a
-            href="mailto:info@magicdoor.cc?subject=Magic%20Door%20%E6%8A%A5%E5%83%B9%E6%9F%A5%E8%A9%A2"
+            href="mailto:info@10botics.com?subject=Magic%20Door%20%E6%8A%A5%E5%83%B9%E6%9F%A5%E8%A9%A2"
             className="inline-flex items-center justify-center px-12 py-5 text-xl rounded-xl bg-brand-primaryDark hover:bg-brand-primary text-white font-semibold transition-colors"
           >
             查詢報價

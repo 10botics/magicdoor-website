@@ -215,7 +215,7 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a
-              href="mailto:info@magicdoor.cc"
+              href="mailto:info@10botics.com"
               className="inline-flex items-center justify-center px-12 py-5 bg-white text-gray-900 text-xl font-semibold rounded-xl hover:bg-gray-100 transition-colors"
             >
               查詢報價
