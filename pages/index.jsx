@@ -29,32 +29,38 @@ export default function Home() {
     <Layout title="Magic Door — AI工具 一門即達">
 
       {/* Hero */}
-      <section className="pt-24 pb-8 px-6 text-center">
-        <div className="max-w-4xl mx-auto">
-          <div className="flex justify-center mb-10">
-            <img src="/icon2.svg" alt="Magic Door" className="w-40 h-40 md:w-52 md:h-52" />
+      <section className="pt-20 pb-8 px-6">
+        <div className="max-w-6xl mx-auto grid lg:grid-cols-[0.85fr_1.15fr] gap-2 items-center">
+          <div className="flex justify-center">
+            <img src="/icon2.svg" alt="Magic Door" className="w-60 h-60 md:w-80 md:h-80" />
           </div>
-          <p className="text-lg md:text-xl font-semibold tracking-[0.16em] text-[#00bbde] uppercase mb-6">全港首創</p>
-          <h1 className="font-black text-gray-900 leading-[1.02] mb-6 tracking-tight">
-            <span className="block text-4xl md:text-5xl">AI工具</span>
-            <span className="relative inline-flex items-center gap-3 mt-1 text-6xl md:text-8xl italic">
-              <span className="inline-block pr-1 md:pr-2 bg-gradient-to-r from-[#22d3ee] to-[#6366f1] bg-clip-text text-transparent">
-                一門直達
+
+          <div className="text-left lg:-ml-20">
+            <p className="text-lg md:text-xl font-semibold tracking-[0.16em] text-[#00bbde] uppercase mb-2">Magic Door</p>
+            <p className="text-lg md:text-xl font-semibold tracking-[0.16em] text-[#00bbde] uppercase mb-6">全港首創</p>
+
+            <h1 className="font-black text-gray-900 leading-[1.02] mb-6 tracking-tight">
+              <span className="block text-5xl md:text-6xl">AI工具</span>
+              <span className="relative inline-flex items-center gap-3 mt-1 text-7xl md:text-9xl italic">
+                <span className="inline-block pr-1 md:pr-2 bg-gradient-to-r from-[#22d3ee] to-[#6366f1] bg-clip-text text-transparent">
+                  一門直達
+                </span>
+                <span className="text-[#6366f1] text-5xl md:text-7xl not-italic">→</span>
+                <span className="absolute -right-10 md:-right-14 top-1/2 -translate-y-1/2 flex flex-col gap-2" aria-hidden="true">
+                  <span className="h-1 w-7 md:w-10 rounded-full bg-[#6366f1]/70" />
+                  <span className="h-1 w-5 md:w-8 rounded-full bg-[#22d3ee]/70" />
+                </span>
+                <span className="absolute left-0 right-0 -bottom-1.5 h-2 bg-[#22d3ee]/20 rounded-full" aria-hidden="true" />
               </span>
-              <span className="text-[#6366f1] text-4xl md:text-6xl not-italic">→</span>
-              <span className="absolute -right-10 md:-right-14 top-1/2 -translate-y-1/2 flex flex-col gap-2" aria-hidden="true">
-                <span className="h-1 w-7 md:w-10 rounded-full bg-[#6366f1]/70" />
-                <span className="h-1 w-5 md:w-8 rounded-full bg-[#22d3ee]/70" />
-              </span>
-              <span className="absolute left-0 right-0 -bottom-1.5 h-2 bg-[#22d3ee]/20 rounded-full" aria-hidden="true" />
-            </span>
-          </h1>
-          <p className="text-xl text-gray-500 mb-8 leading-relaxed">
-            非VPN方式，接通熱門AI工具<sup className="text-sm">*</sup>
-          </p>
-          <p className="text-xs text-gray-400 max-w-xl mx-auto leading-relaxed">
-            * 客戶請在購買前先行測試並確認 Magic Door 是否支援所需之AI 工具
-          </p>
+            </h1>
+
+            <p className="text-2xl text-gray-500 mb-8 leading-relaxed">
+              非VPN方式，接通熱門AI工具<sup className="text-sm">*</sup>
+            </p>
+            <p className="text-sm text-gray-400 max-w-xl leading-relaxed">
+              * 客戶請在購買前先行測試並確認 Magic Door 是否支援所需之AI 工具
+            </p>
+          </div>
         </div>
       </section>
 
