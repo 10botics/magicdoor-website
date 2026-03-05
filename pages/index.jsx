@@ -9,7 +9,7 @@ const benefits = [
   {
     char: '隨地',
     title: '原地接通免翻牆',
-    description: '保留香港IP，以非VPN形式，輕鬆接通全球 AI 工具。',
+    description: '以非VPN形式，輕鬆接通全球 AI 工具。',
   },
   {
     char: '隨時',
@@ -19,7 +19,7 @@ const benefits = [
   {
     char: '隨心',
     title: '100%操作私隱',
-    description: '絕不記錄對話內容，嚴格保障學術私隱，安心使用AI工具。',
+    description: '絕不記錄對話內容，嚴格保障私隱，安心使用AI工具。',
   },
 ]
 
@@ -29,14 +29,25 @@ export default function Home() {
     <Layout title="Magic Door — AI工具 一門即達">
 
       {/* Hero */}
-      <section className="pt-24 pb-20 px-6 text-center">
+      <section className="pt-24 pb-8 px-6 text-center">
         <div className="max-w-4xl mx-auto">
           <div className="flex justify-center mb-10">
             <img src="/icon2.svg" alt="Magic Door" className="w-40 h-40 md:w-52 md:h-52" />
           </div>
-          <p className="text-sm font-semibold tracking-[0.16em] text-[#00bbde] uppercase mb-6">全港首創AI解放方案</p>
-          <h1 className="text-5xl md:text-7xl font-black text-gray-900 leading-[1.05] mb-6 tracking-tight">
-            AI工具 一門直達
+          <p className="text-lg md:text-xl font-semibold tracking-[0.16em] text-[#00bbde] uppercase mb-6">全港首創</p>
+          <h1 className="font-black text-gray-900 leading-[1.02] mb-6 tracking-tight">
+            <span className="block text-4xl md:text-5xl">AI工具</span>
+            <span className="relative inline-flex items-center gap-3 mt-1 text-6xl md:text-8xl italic">
+              <span className="inline-block pr-1 md:pr-2 bg-gradient-to-r from-[#22d3ee] to-[#6366f1] bg-clip-text text-transparent">
+                一門直達
+              </span>
+              <span className="text-[#6366f1] text-4xl md:text-6xl not-italic">→</span>
+              <span className="absolute -right-10 md:-right-14 top-1/2 -translate-y-1/2 flex flex-col gap-2" aria-hidden="true">
+                <span className="h-1 w-7 md:w-10 rounded-full bg-[#6366f1]/70" />
+                <span className="h-1 w-5 md:w-8 rounded-full bg-[#22d3ee]/70" />
+              </span>
+              <span className="absolute left-0 right-0 -bottom-1.5 h-2 bg-[#22d3ee]/20 rounded-full" aria-hidden="true" />
+            </span>
           </h1>
           <p className="text-xl text-gray-500 mb-8 leading-relaxed">
             非VPN方式，接通熱門AI工具<sup className="text-sm">*</sup>
@@ -48,7 +59,7 @@ export default function Home() {
       </section>
 
       {/* Benefits */}
-      <section className="py-20 md:py-24 px-6 bg-white">
+      <section className="py-16 md:py-20 px-6 bg-white">
         <div className="max-w-5xl mx-auto">
           <div className="w-full h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent mb-12 md:mb-14" />
           <div className="text-center mb-12">
@@ -69,9 +80,9 @@ export default function Home() {
                     : 'bg-[#f7f8fb]'
                 }`}
               >
-                <div className="flex items-stretch gap-4">
+                <div className="flex items-start gap-4">
                   <div
-                    className="w-12 md:w-14 text-indigo-600 font-black text-3xl md:text-4xl flex items-center justify-center"
+                    className="w-12 md:w-14 text-indigo-600 font-black text-3xl md:text-4xl flex items-start justify-center pt-1"
                     style={{ writingMode: 'vertical-rl', textOrientation: 'upright', letterSpacing: '0.08em' }}
                   >
                     {benefit.char}
@@ -119,11 +130,11 @@ export default function Home() {
           <div className="text-white p-0 md:p-0">
             <div className="grid sm:grid-cols-2 gap-4">
               <div className="p-0">
-                <img src="/panel-off.png" alt="Magic Door 未連線面板示意" className="w-full max-w-[180px] mx-auto rounded-xl" />
+                <img src="/panel-off.png" alt="Magic Door 未連線面板示意" className="w-full max-w-[220px] mx-auto rounded-xl" />
                 <p className="text-xs font-semibold text-indigo-100 mt-2 text-center">未接通狀態</p>
               </div>
               <div className="p-0">
-                <img src="/panel-on.png" alt="Magic Door 已連線面板示意" className="w-full max-w-[180px] mx-auto rounded-xl" />
+                <img src="/panel-on.png" alt="Magic Door 已連線面板示意" className="w-full max-w-[220px] mx-auto rounded-xl" />
                 <p className="text-xs font-semibold text-indigo-100 mt-2 text-center">接通狀態</p>
               </div>
             </div>
@@ -159,7 +170,7 @@ export default function Home() {
               {[
                 { text: '絕無繁鎖操作，一click全校安裝', dot: 'bg-lime-400/20 text-lime-300' },
                 { text: '自動更新插件，無需手動維護', dot: 'bg-lime-400/20 text-lime-300' },
-                { text: '隨時按需增加授權名額', dot: 'bg-lime-400/20 text-lime-300' },
+                { text: '隨時按需求增加授權名額', dot: 'bg-lime-400/20 text-lime-300' },
               ].map((item) => (
                 <li key={item.text} className="flex items-center gap-3">
                   <span className={`inline-flex items-center justify-center w-6 h-6 rounded-full text-sm font-black ring-2 ring-lime-300/70 ${item.dot}`}>✓</span>
