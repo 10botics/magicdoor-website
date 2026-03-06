@@ -9,6 +9,7 @@ const navLinks = [
 ]
 
 const guideLinks = [
+  { href: '/guides', label: '用戶專區首頁' },
   { href: '/guides/it-admin', label: 'IT管理指南' },
   { href: '/guides/subscription', label: '訂閱管理' },
   { href: '/guides/end-user', label: '使用說明' },

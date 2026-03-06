@@ -4,7 +4,7 @@ export function middleware(req) {
   const { pathname } = req.nextUrl
 
   // Only protect guide pages
-  if (pathname.startsWith('/guides')) {
+    if (pathname === '/guides' || pathname.startsWith('/guides/')) {
     const authHeader = req.headers.get('authorization')
 
     if (!authHeader) {
@@ -37,5 +37,5 @@ export function middleware(req) {
 }
 
 export const config = {
-  matcher: ['/guides/:path*'],
+  matcher: ['/guides', '/guides/:path*'],
 }

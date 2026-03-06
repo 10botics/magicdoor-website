@@ -4,23 +4,23 @@ import Link from 'next/link'
 
 const steps = [
   {
-    title: '確認 Magic Door 已安裝',
-    description: '查看 Chrome 瀏覽器右上角工具列，應看到 Magic Door 圖示。如未看到，請聯絡學校 IT 管理員。',
-    image: { filename: 'guides/user-01-toolbar.png', description: 'Chrome 工具列顯示 Magic Door 圖示' },
+    title: '登入 Chrome 瀏覽器',
+    description: '確保您已在 Chrome 瀏覽器登入您的學校 Google 帳號（例如 teacher@school.edu.hk），並開啟「同步功能」。這是確保 Magic Door 能正確識別您身份的首要步驟。',
+    image: { filename: 'guides/user-01-chrome-login.png', description: '在 Chrome 瀏覽器登入學校帳號' },
   },
   {
-    title: '首次登入（只需一次）',
-    description: '點擊 Magic Door 圖示，在彈出視窗中點擊「以 Google 帳號登入」。使用學校電郵帳號完成授權後，日後無需再次登入。',
-    image: { filename: 'guides/user-02-signin.png', description: '擴充功能彈出視窗，顯示「以 Google 帳號登入」按鈕' },
+    title: '確認 Magic Door 已安裝',
+    description: '查看 Chrome 瀏覽器右上角工具列，應看到 Magic Door 圖示。如未看到，請聯絡學校 IT 管理員。',
+    image: { filename: 'guides/user-02-toolbar.png', description: 'Chrome 工具列顯示 Magic Door 圖示' },
+  },
+  {
+    title: '首次登入擴充功能（只需一次）',
+    description: '點擊 Magic Door 圖示，在彈出視窗中點擊「以 Google 帳號登入」。使用相同的學校電郵帳號完成授權後，日後無需再次登入。',
+    image: { filename: 'guides/user-03-signin.png', description: '擴充功能彈出視窗，顯示「以 Google 帳號登入」按鈕' },
   },
   {
     title: '點擊切換開關，開始連線',
-    description: '登入後，點擊視窗內的切換開關以建立連線。圖示徽章會顯示「...」表示正在連線中，請稍候片刻。',
-    image: { filename: 'guides/user-03-connecting.png', description: '擴充功能圖示顯示「...」黃色徽章，表示正在連線' },
-  },
-  {
-    title: '連線成功，即可使用',
-    description: '圖示徽章變為綠色「ON」並顯示本次連線的剩餘時間，表示連線已建立。現在可以開啟任何已支援的 AI 工具。',
+    description: '登入後，點擊視窗內的切換開關以建立連線。圖示徽章會變為綠色「ON」並顯示本次連線的剩餘時間，表示連線已建立。',
     image: { filename: 'guides/user-04-connected.png', description: '擴充功能圖示顯示綠色「ON」徽章及倒數計時' },
   },
   {
@@ -45,7 +45,7 @@ export default function EndUserGuide() {
 
         {/* Breadcrumb */}
         <nav className="text-sm text-gray-400 mb-10">
-          <Link href="/" className="hover:text-gray-600 transition-colors">首頁</Link>
+          <Link href="/guides" className="hover:text-gray-600 transition-colors">用戶專區</Link>
           <span className="mx-2">/</span>
           <span className="text-gray-600">使用說明</span>
         </nav>

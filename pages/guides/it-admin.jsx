@@ -56,7 +56,7 @@ export default function ItAdminGuide() {
 
         {/* Breadcrumb */}
         <nav className="text-sm text-gray-400 mb-10">
-          <Link href="/" className="hover:text-gray-600 transition-colors">首頁</Link>
+          <Link href="/guides" className="hover:text-gray-600 transition-colors">用戶專區</Link>
           <span className="mx-2">/</span>
           <span className="text-gray-600">IT管理員安裝指南</span>
         </nav>
