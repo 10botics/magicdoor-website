@@ -1,5 +1,6 @@
 import Layout from '../../components/Layout'
 import Link from 'next/link'
+import { getWhatsAppLink } from '../../utils/contact'
 
 const guides = [
   {
@@ -96,7 +97,7 @@ export default function GuidesIndex() {
               如果您在安裝或使用過程中遇到任何問題，請隨時聯絡我們的支援團隊。
             </p>
             <a
-              href="https://wa.me/85261516102"
+              href={getWhatsAppLink('你好，我在使用 Magic Door 時遇到問題，需要協助。')}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-6 py-3 rounded-xl bg-white text-gray-900 font-bold hover:bg-indigo-50 transition-colors"

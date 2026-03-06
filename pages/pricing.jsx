@@ -1,5 +1,6 @@
 import Layout from '../components/Layout'
 import Link from 'next/link'
+import { getWhatsAppLink } from '../utils/contact'
 
 const individualPlans = [
   {
@@ -138,7 +139,9 @@ export default function Pricing() {
 
         <div className="flex justify-center">
           <a
-            href="mailto:info@10botics.com?subject=Magic%20Door%20%E6%8A%A5%E5%83%B9%E6%9F%A5%E8%A9%A2"
+            href={getWhatsAppLink('你好，我想查詢 Magic Door 報價。')}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center justify-center px-12 py-5 text-xl rounded-xl bg-brand-primaryDark hover:bg-brand-primary text-white font-semibold transition-colors"
           >
             查詢報價
