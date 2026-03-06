@@ -222,6 +222,42 @@ export default function Home() {
       </section>
       </section>
 
+      {/* Leaflet */}
+      <section className="py-16 px-6 bg-gradient-to-br from-[#f3fcff] via-white to-[#eef8ff]">
+        <div className="max-w-5xl mx-auto">
+          <div className="rounded-3xl border border-cyan-100/80 bg-gradient-to-br from-[#f8feff] via-white to-[#f1f9ff] p-8 md:p-10 shadow-sm">
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+              <div>
+                <p className="text-sm font-bold tracking-[0.14em] uppercase text-[#00bbde] mb-3">Leaflet</p>
+                <h2 className="text-3xl md:text-4xl font-black text-gray-900 tracking-tight mb-3">
+                  Magic Door 優勢速覽
+                </h2>
+                <p className="text-gray-600 leading-relaxed max-w-2xl">
+                  即時查看或下載最新版 Leaflet，快速掌握產品優勢、使用方式與部署方向。
+                </p>
+              </div>
+              <div className="flex flex-col sm:flex-row gap-3">
+                <a
+                  href="/magic-door-leaflet.pdf"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center justify-center px-8 py-4 rounded-2xl bg-[#00bbde] text-white text-lg font-bold hover:bg-cyan-500 transition-colors"
+                >
+                  即時查看
+                </a>
+                <a
+                  href="/magic-door-leaflet.pdf"
+                  download
+                  className="inline-flex items-center justify-center px-8 py-4 rounded-2xl border border-cyan-200 text-cyan-700 text-lg font-bold hover:bg-cyan-50 transition-colors"
+                >
+                  下載 Leaflet
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Bottom CTA */}
       <section className="py-24 px-6 bg-gray-900 text-center">
         <div className="max-w-2xl mx-auto">
