@@ -14,24 +14,29 @@ const steps = [
     image: { filename: 'guides/user-02-toolbar.png', description: 'Chrome 工具列顯示 Magic Door 圖示' },
   },
   {
+    title: '查看擴充功能介面',
+    description: '點擊 Magic Door 圖示即可看到主介面。如果您尚未登入，介面底部會顯示服務條款提示。',
+    image: { filename: 'guides/user-03-ui.png', description: 'Magic Door 擴充功能未登入介面' },
+  },
+  {
     title: '首次登入擴充功能（只需一次）',
-    description: '點擊 Magic Door 圖示，在彈出視窗中點擊「以 Google 帳號登入」。使用相同的學校電郵帳號完成授權後，日後無需再次登入。',
-    image: { filename: 'guides/user-03-signin.png', description: '擴充功能彈出視窗，顯示「以 Google 帳號登入」按鈕' },
+    description: '點擊連線開關，系統會自動彈出 Google 登入視窗。請使用您的學校電郵帳號完成授權。登入成功後，介面將顯示您的帳號資訊及連線狀態。',
+    image: { filename: 'guides/user-04-signin.png', description: '登入成功後的主介面' },
   },
   {
     title: '點擊切換開關，開始連線',
-    description: '登入後，點擊視窗內的切換開關以建立連線。圖示徽章會變為綠色「ON」並顯示本次連線的剩餘時間，表示連線已建立。',
-    image: { filename: 'guides/user-04-connected.png', description: '擴充功能圖示顯示綠色「ON」徽章及倒數計時' },
+    description: '點擊視窗內的切換開關以建立連線。圖示徽章會變為綠色「ON」並顯示本次連線的剩餘時間，表示連線已建立。',
+    image: { filename: 'guides/user-05-connected.png', description: '擴充功能圖示顯示綠色「ON」徽章及倒數計時' },
   },
   {
     title: '前往 AI 工具正常使用',
     description: '連線後，直接在瀏覽器開啟所需的 AI 工具網址，即可正常使用完全版功能。',
-    image: { filename: 'guides/user-05-using.png', description: 'AI 工具在連線後正常載入的畫面' },
+    image: { filename: 'guides/user-06-using.png', description: 'AI 工具在連線後正常載入的畫面' },
   },
   {
     title: '使用完畢後中斷連線',
     description: '使用完畢後，點擊 Magic Door 圖示，然後點擊「中斷連線」以結束本次連線。連線亦會在時限屆滿時自動結束。',
-    image: { filename: 'guides/user-06-disconnect.png', description: '擴充功能視窗顯示「中斷連線」按鈕' },
+    image: { filename: 'guides/user-07-disconnect.png', description: '擴充功能視窗顯示「中斷連線」按鈕' },
   },
 ]
 
