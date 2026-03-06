@@ -9,19 +9,24 @@ const steps = [
     image: { filename: 'guides/sub-01-login.png', description: 'Magic Door 管理入口登入頁面' },
   },
   {
+    title: '選擇訂閱項目',
+    description: '登入後，如果您管理多個訂閱計劃，請在列表中點擊您想要管理的訂閱項目名稱。',
+    image: { filename: 'guides/sub-02-select-subscription.png', description: '訂閱列表頁面，選擇要管理的訂閱' },
+  },
+  {
     title: '查看目前成員列表',
-    description: '登入後，主頁顯示目前所有已加入的成員、其電郵地址及使用狀況。',
-    image: { filename: 'guides/sub-02-member-list.png', description: '成員列表頁面，顯示所有現有成員' },
+    description: '進入訂閱詳情頁後，您將看到目前所有已加入的成員、其電郵地址及使用狀況。',
+    image: { filename: 'guides/sub-03-member-list.png', description: '成員列表頁面，顯示所有現有成員' },
   },
   {
     title: '新增成員',
     description: '點擊「新增成員」按鈕，在欄位中輸入成員的學校電郵地址（例如 teacher@school.edu.hk），然後點擊「確認」完成新增。每次可新增一位成員。',
-    image: { filename: 'guides/sub-03-add-member.png', description: '新增成員表格，輸入學校電郵地址' },
+    image: { filename: 'guides/sub-04-add-member.png', description: '新增成員表格，輸入學校電郵地址' },
   },
   {
     title: '移除成員',
     description: '在成員列表中找到對應成員，點擊右側的「移除」按鈕，確認後即完成移除。被移除的成員將立即失去訪問權限。',
-    image: { filename: 'guides/sub-04-remove-member.png', description: '成員列表中的移除按鈕' },
+    image: { filename: 'guides/sub-05-remove-member.png', description: '成員列表中的移除按鈕' },
   },
 ]
 

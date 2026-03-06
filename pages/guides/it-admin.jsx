@@ -1,5 +1,6 @@
 import Layout from '../../components/Layout'
 import ImagePlaceholder from '../../components/ImagePlaceholder'
+import CopyableId from '../../components/CopyableId'
 import Link from 'next/link'
 
 const steps = [
@@ -14,24 +15,34 @@ const steps = [
     image: { filename: 'guides/admin-02-chrome-apps.png', description: '左側選單：裝置 > Chrome > 應用程式及擴充功能' },
   },
   {
-    title: '選擇目標組織單位',
-    description: '在左側組織架構中，選擇您希望部署擴充功能的組織單位（OU），例如全校老師的群組。',
-    image: { filename: 'guides/admin-03-select-ou.png', description: '選擇對應的組織單位（OU）' },
+    title: '進入使用者及瀏覽器設定',
+    description: '在「應用程式及擴充功能」頁面中，點擊「使用者和瀏覽器」分頁。',
+    image: { filename: 'guides/admin-03-select-ou.png', description: '點擊使用者和瀏覽器分頁' },
   },
   {
-    title: '新增 Magic Door 擴充功能',
-    description: '點擊右下角「+」按鈕，選擇「從 Chrome 線上應用程式商店新增」。在搜尋欄輸入「Magic Door」，找到擴充功能後點擊「選取」。',
-    image: { filename: 'guides/admin-04-add-extension.png', description: '在 Chrome 線上應用程式商店搜尋 Magic Door' },
+    title: '選擇依 ID 新增',
+    description: '點擊右下角的「+」按鈕，然後在彈出的選單中選擇「依 ID 新增 Chrome 應用程式或擴充功能」。',
+    image: { filename: 'guides/admin-04-apps-list.png', description: '點擊 + 按鈕並選擇依 ID 新增' },
+  },
+  {
+    title: '輸入擴充功能 ID',
+    description: (
+      <>
+        <p className="mb-3">在彈出視窗中，將「來源」設為「Chrome 線上應用程式商店」，然後輸入 Magic Door 的擴充功能 ID，最後點擊「儲存」。</p>
+        <CopyableId id="akcaimdafkmgjlldooglonhapahdjapl" />
+      </>
+    ),
+    image: { filename: 'guides/admin-05-add-extension.png', description: '輸入擴充功能 ID 並選擇來源' },
   },
   {
     title: '設定強制安裝',
-    description: '在擴充功能列表中找到 Magic Door，將安裝政策由「允許安裝」改為「強制安裝」，然後點擊右上角「儲存」。',
-    image: { filename: 'guides/admin-05-force-install.png', description: '安裝政策下拉選單設定為「強制安裝」' },
+    description: '在列表找到 Magic Door，將「安裝政策」改為「強制安裝」，並確保「權限和網址」設定正確，然後點擊右上角「儲存」。',
+    image: { filename: 'guides/admin-06-force-install.png', description: '將安裝政策設定為「強制安裝」' },
   },
   {
     title: '確認安裝成功',
-    description: '老師重新啟動 Chrome 後，Magic Door 圖示應自動出現於瀏覽器右上角工具列，無需任何手動操作。',
-    image: { filename: 'guides/admin-06-result.png', description: 'Magic Door 圖示出現於 Chrome 工具列' },
+    description: '完成後，Magic Door 會出現在應用程式列表中。老師重新啟動 Chrome 後，圖示將自動出現在工具列。',
+    image: { filename: 'guides/admin-07-result.png', description: 'Magic Door 已成功新增至列表' },
   },
 ]
 
