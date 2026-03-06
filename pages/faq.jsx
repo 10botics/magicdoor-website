@@ -117,11 +117,27 @@ export default function Faq() {
                 {group.faqs.map((faq) => {
                   counter++
                   const num = counter
+                  const id = `faq-${num}`
                   return (
-                    <div key={num} className="p-6 rounded-2xl border border-gray-100 flex gap-5">
+                    <div 
+                      key={num} 
+                      id={id}
+                      className="p-6 rounded-2xl border border-gray-100 flex gap-5 scroll-mt-24 hover:border-indigo-100 hover:shadow-sm transition-all group target:border-indigo-300 target:bg-indigo-50/30"
+                    >
                       <span className="flex-shrink-0 text-sm font-bold text-indigo-600 w-6 pt-0.5">{num}.</span>
                       <div>
-                        <p className="font-semibold text-gray-900 mb-2">{faq.q}</p>
+                        <div className="flex items-start justify-between gap-4 mb-2">
+                          <p className="font-semibold text-gray-900">{faq.q}</p>
+                          <a 
+                            href={`#${id}`}
+                            className="opacity-0 group-hover:opacity-100 text-gray-300 hover:text-indigo-600 transition-all"
+                            title="直接連結至此問題"
+                          >
+                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+                            </svg>
+                          </a>
+                        </div>
                         <p className="text-sm text-gray-500 leading-relaxed">{faq.a}</p>
                       </div>
                     </div>
