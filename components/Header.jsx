@@ -58,6 +58,10 @@ export default function Header() {
               ))}
             </div>
           </div>
+
+          <Link href="/trial" className="bg-black text-white text-sm px-4 py-2 rounded-full hover:bg-gray-800 transition-colors whitespace-nowrap">
+            立即試用
+          </Link>
         </nav>
 
         <button
@@ -85,6 +89,9 @@ export default function Header() {
                 {link.label}
               </Link>
             ))}
+            <Link href="/trial" onClick={() => setMenuOpen(false)} className="inline-block bg-black text-white text-sm px-4 py-2 rounded-full text-center hover:bg-gray-800 transition-colors">
+              立即試用
+            </Link>
             <div className="h-px bg-gray-100 my-1"></div>
             <div className="font-medium text-gray-400 uppercase tracking-widest text-[10px] mb-1">用戶專區</div>
             {guideLinks.map((link) => (
