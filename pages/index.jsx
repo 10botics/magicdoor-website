@@ -65,6 +65,19 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Trial CTA */}
+      <section className="pb-10 px-6">
+        <div className="max-w-6xl mx-auto flex justify-center">
+          <a
+            href="/trial"
+            className="inline-flex items-center gap-2 bg-black text-white text-base font-medium px-8 py-4 rounded-full hover:bg-gray-800 transition-colors"
+          >
+            立即免費試用
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </section>
+
       {/* Benefits */}
       <section className="py-16 md:py-20 px-6 bg-white">
         <div className="max-w-5xl mx-auto">
