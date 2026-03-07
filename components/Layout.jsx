@@ -29,7 +29,7 @@ export default function Layout({ children, title = 'Magic Door — AI工具 一�
         <meta name="twitter:image" content="https://www.magicdoor.cc/icon-1024.png" />
         <link rel="icon" href="/icon2.svg" type="image/svg+xml" />
       </Head>
-      <div className="min-h-screen flex flex-col font-sans bg-white text-gray-900">
+      <div className="min-h-screen flex flex-col font-sans bg-white text-gray-900 overflow-x-hidden">
         <Header />
         <main className="flex-1">
           {children}

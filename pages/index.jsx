@@ -30,7 +30,7 @@ export default function Home() {
     <Layout title="Magic Door — AI工具 一門即達">
 
       {/* Hero */}
-      <section className="pt-20 pb-8 px-6">
+      <section className="pt-20 pb-8 px-6 overflow-hidden">
         <div className="max-w-6xl mx-auto grid lg:grid-cols-[0.85fr_1.15fr] gap-2 items-center">
           <div className="flex justify-center">
             <img src="/icon2.svg" alt="Magic Door" className="w-60 h-60 md:w-80 md:h-80" />
