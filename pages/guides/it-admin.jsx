@@ -1,6 +1,5 @@
 import Layout from '../../components/Layout'
 import ImagePlaceholder from '../../components/ImagePlaceholder'
-import CopyableId from '../../components/CopyableId'
 import Link from 'next/link'
 
 const steps = [
@@ -20,19 +19,14 @@ const steps = [
     image: { filename: 'guides/admin-03-select-ou.png', description: '點擊使用者和瀏覽器分頁' },
   },
   {
-    title: '選擇依 ID 新增',
-    description: '點擊右下角的「+」按鈕，然後在彈出的選單中選擇「依 ID 新增 Chrome 應用程式或擴充功能」。',
-    image: { filename: 'guides/admin-04-apps-list.png', description: '點擊 + 按鈕並選擇依 ID 新增' },
+    title: '選擇新增擴充功能',
+    description: '點擊右下角的「+」按鈕，然後在彈出的選單中選擇「新增 Chrome 應用程式或擴充功能」。',
+    image: { filename: 'guides/admin-04-apps-list.png', description: '點擊 + 按鈕並選擇新增擴充功能' },
   },
   {
     title: '輸入擴充功能 ID',
-    description: (
-      <>
-        <p className="mb-3">在彈出視窗中，將「來源」設為「Chrome 線上應用程式商店」，然後輸入 Magic Door 的擴充功能 ID，最後點擊「儲存」。</p>
-        <CopyableId id="akcaimdafkmgjlldooglonhapahdjapl" />
-      </>
-    ),
-    image: { filename: 'guides/admin-05-add-extension.png', description: '輸入擴充功能 ID 並選擇來源' },
+    description: '在彈出視窗中，將「來源」設為「Chrome 線上應用程式商店」，然後輸入 Magic Door 的擴充功能 ID，最後點擊「儲存」。如不清楚 ID，請聯絡我們的銷售團隊。',
+    image: { filename: 'guides/admin-05-add-extension.png', description: '加入 Magic Door 擴充功能並選擇來源' },
   },
   {
     title: '設定強制安裝',
