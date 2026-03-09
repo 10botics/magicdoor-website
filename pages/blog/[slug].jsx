@@ -132,24 +132,31 @@ export default function BlogPost({ post }) {
                 ⚡ 前後對比：從「隨機生成」到「風格自主」
               </h2>
 
+              <p className="text-xs text-gray-500 mb-2 md:hidden">可左右滑動查看完整對比表 →</p>
               <div className="rounded-3xl border border-cyan-100 overflow-hidden">
-                <div className="grid grid-cols-1 md:grid-cols-3">
-                  <div className="bg-gray-50 px-5 py-4 font-bold text-gray-700 border-b md:border-b-0 md:border-r border-gray-100">
-                    功能項目
-                  </div>
-                  <div className="bg-rose-50 px-5 py-4 font-bold text-rose-700 border-b md:border-b-0 md:border-r border-rose-100">
-                    更新前（Before）
-                  </div>
-                  <div className="bg-cyan-50 px-5 py-4 font-bold text-cyan-700">更新後（After：Custom Styles）</div>
-                </div>
+                <div className="overflow-x-auto">
+                  <div className="min-w-[760px]">
+                    <div className="grid grid-cols-3">
+                      <div className="bg-gray-50 px-5 py-4 font-bold text-gray-700 border-r border-gray-100">
+                        功能項目
+                      </div>
+                      <div className="bg-rose-50 px-5 py-4 font-bold text-rose-700 border-r border-rose-100">
+                        更新前（Before）
+                      </div>
+                      <div className="bg-cyan-50 px-5 py-4 font-bold text-cyan-700">更新後（After：Custom Styles）</div>
+                    </div>
 
-                {comparisonRows.map((row) => (
-                  <div key={row.item} className="grid grid-cols-1 md:grid-cols-3 border-t border-gray-100">
-                    <div className="px-5 py-4 font-semibold text-gray-800 bg-white">{row.item}</div>
-                    <div className="px-5 py-4 text-gray-600 bg-white md:border-l border-gray-100">{row.before}</div>
-                    <div className="px-5 py-4 text-cyan-800 bg-cyan-50/60 md:border-l border-cyan-100 font-medium">{row.after}</div>
+                    {comparisonRows.map((row) => (
+                      <div key={row.item} className="grid grid-cols-3 border-t border-gray-100">
+                        <div className="px-5 py-4 font-semibold text-gray-800 bg-white">{row.item}</div>
+                        <div className="px-5 py-4 text-gray-600 bg-white border-l border-gray-100">{row.before}</div>
+                        <div className="px-5 py-4 text-cyan-800 bg-cyan-50/60 border-l border-cyan-100 font-medium">
+                          {row.after}
+                        </div>
+                      </div>
+                    ))}
                   </div>
-                ))}
+                </div>
               </div>
             </section>
 
@@ -175,27 +182,32 @@ export default function BlogPost({ post }) {
                 <div className="bg-cyan-50 px-5 py-4 border-b border-cyan-100">
                   <h3 className="text-lg md:text-xl font-black text-cyan-800">🎨 可選風格一覽</h3>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2">
-                  <div className="px-5 py-3 font-bold text-gray-700 bg-gray-50 border-b md:border-r border-gray-100">風格</div>
-                  <div className="px-5 py-3 font-bold text-gray-700 bg-gray-50 border-b border-gray-100">適合用途</div>
-                </div>
-                {[
-                  ['Professional（專業）', '商務報告、家長信、行政文件'],
-                  ['Instructional（教學式）', '步驟指引、操作教程、學習流程'],
-                  ['Scientific（科學式）', '學術內容、研究摘要、數據展示'],
-                  ['Editorial（報章式）', '新聞式排版，帶復古報紙風格'],
-                  ['Bento Grid（便當格）', '結構化內容，清晰分區呈現'],
-                  ['Bricks（積木式）', '活潑動感，適合展示清單或步驟'],
-                  ['Clay（黏土感）', '色彩鮮豔，現代風格'],
-                  ['Anime（動漫風）', '角色驅動的創意視覺'],
-                  ['Kawaii（可愛風）', '輕鬆有趣，適合非正式場合'],
-                  ['Sketch（手繪風）', '手稿感設計，親切自然'],
-                ].map(([style, use]) => (
-                  <div key={style} className="grid grid-cols-1 md:grid-cols-2 border-t border-gray-100">
-                    <div className="px-5 py-3 text-gray-800 font-medium md:border-r border-gray-100">{style}</div>
-                    <div className="px-5 py-3 text-gray-600">{use}</div>
+                <p className="text-xs text-gray-500 px-5 py-2 md:hidden">可左右滑動查看完整風格清單 →</p>
+                <div className="overflow-x-auto">
+                  <div className="min-w-[720px]">
+                    <div className="grid grid-cols-2">
+                      <div className="px-5 py-3 font-bold text-gray-700 bg-gray-50 border-b border-r border-gray-100">風格</div>
+                      <div className="px-5 py-3 font-bold text-gray-700 bg-gray-50 border-b border-gray-100">適合用途</div>
+                    </div>
+                    {[
+                      ['Professional（專業）', '商務報告、家長信、行政文件'],
+                      ['Instructional（教學式）', '步驟指引、操作教程、學習流程'],
+                      ['Scientific（科學式）', '學術內容、研究摘要、數據展示'],
+                      ['Editorial（報章式）', '新聞式排版，帶復古報紙風格'],
+                      ['Bento Grid（便當格）', '結構化內容，清晰分區呈現'],
+                      ['Bricks（積木式）', '活潑動感，適合展示清單或步驟'],
+                      ['Clay（黏土感）', '色彩鮮豔，現代風格'],
+                      ['Anime（動漫風）', '角色驅動的創意視覺'],
+                      ['Kawaii（可愛風）', '輕鬆有趣，適合非正式場合'],
+                      ['Sketch（手繪風）', '手稿感設計，親切自然'],
+                    ].map(([style, use]) => (
+                      <div key={style} className="grid grid-cols-2 border-t border-gray-100">
+                        <div className="px-5 py-3 text-gray-800 font-medium border-r border-gray-100">{style}</div>
+                        <div className="px-5 py-3 text-gray-600">{use}</div>
+                      </div>
+                    ))}
                   </div>
-                ))}
+                </div>
               </div>
 
               <div className="mt-8">
@@ -207,7 +219,7 @@ export default function BlogPost({ post }) {
                   className="group block relative w-full rounded-2xl overflow-hidden border border-cyan-100 bg-black"
                 >
                   <img
-                    src="/notebooklm-cross-subject-1.png"
+                    src="/notebooklm-custom-styles-preview.png"
                     alt="NotebookLM 影片預覽圖"
                     className="w-full aspect-video object-cover opacity-80 group-hover:opacity-70 transition-opacity"
                   />

@@ -35,6 +35,15 @@ export default function BlogIndex({ posts }) {
                 href={`/blog/${post.slug}`}
                 className="block group p-7 rounded-2xl border border-gray-100 hover:border-gray-200 hover:shadow-sm transition-all"
               >
+                {post.coverImage && (
+                  <div className="mb-4 rounded-xl overflow-hidden border border-gray-100">
+                    <img
+                      src={post.coverImage}
+                      alt={`${post.title} preview`}
+                      className="w-full aspect-[16/9] object-cover group-hover:scale-[1.01] transition-transform"
+                    />
+                  </div>
+                )}
                 <p className="text-sm text-gray-400 mb-2">{formatDate(post.date)}</p>
                 <h2 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-indigo-600 transition-colors leading-snug">
                   {post.title}
