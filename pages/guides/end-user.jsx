@@ -62,7 +62,7 @@ export default function EndUserGuide() {
             連線及使用<br />AI 工具
           </h1>
           <p className="text-lg text-gray-500 leading-relaxed">
-            Magic Door 安裝後，只需簡單幾步即可接通各大 AI 工具的完全版。
+            Magic Door 安裝後，只需簡單幾步即可接通各大 AI 工具。
           </p>
         </div>
 
