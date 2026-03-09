@@ -87,7 +87,7 @@ export default function BlogPost({ post }) {
   }
 
   return (
-    <Layout title={`${post.title} — Magic Door`} description={post.excerpt}>
+    <Layout title={`${post.title} — Magic Door`} description={post.excerpt} image={post.coverImage || '/icon-1024.png'}>
       <div className="max-w-3xl mx-auto px-6 py-16">
 
         {/* Breadcrumb */}
@@ -129,7 +129,7 @@ export default function BlogPost({ post }) {
           <>
             <section className="mt-10">
               <h2 className="text-2xl md:text-3xl font-black text-gray-900 mb-3">
-                ⚡ 前後對比：從「隨機生成」到「風格自主」
+                🔍 前後對比：從「隨機生成」到「風格自主」
               </h2>
 
               <p className="text-xs text-gray-500 mb-2 md:hidden">可左右滑動查看完整對比表 →</p>
@@ -164,6 +164,13 @@ export default function BlogPost({ post }) {
               <h2 className="text-2xl md:text-3xl font-black text-gray-900 mb-3">
                 ⚡ 精簡流程，最快3分鐘生成初稿
               </h2>
+              <div className="mb-8 rounded-2xl overflow-hidden border border-cyan-100 bg-white">
+                <img
+                  src="/notebooklm-flow-screencap.png"
+                  alt="NotebookLM 流程示範截圖"
+                  className="w-full"
+                />
+              </div>
               <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4">
                 {quickSteps.map((step, idx) => (
                   <div key={step.title} className="rounded-2xl border border-cyan-100 bg-white p-4 md:p-5">
@@ -208,32 +215,6 @@ export default function BlogPost({ post }) {
                     ))}
                   </div>
                 </div>
-              </div>
-
-              <div className="mt-8">
-                <h3 className="text-xl md:text-2xl font-black text-gray-900 mb-3">🎬 流程示範影片</h3>
-                <a
-                  href="https://x.com/NotebookLM/status/2028556861050630632?s=20"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="group block relative w-full rounded-2xl overflow-hidden border border-cyan-100 bg-black"
-                >
-                  <img
-                    src="/notebooklm-custom-styles-preview.png"
-                    alt="NotebookLM 影片預覽圖"
-                    className="w-full aspect-video object-cover opacity-80 group-hover:opacity-70 transition-opacity"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <span className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-white/95 text-cyan-700 text-2xl shadow-lg">
-                      ▶
-                    </span>
-                  </div>
-                  <div className="absolute left-4 right-4 bottom-4 text-white">
-                    <p className="text-base md:text-lg font-black">立即播放 NotebookLM 示範影片</p>
-                    <p className="text-xs md:text-sm text-white/85">點擊後於新分頁開啟 X 原帖觀看</p>
-                  </div>
-                </a>
               </div>
             </section>
 
