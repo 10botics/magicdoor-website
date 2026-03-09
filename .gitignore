@@ -5,3 +5,4 @@ out/
 *.local
 .next-dev.log
 .next-dev.pid
+.pydeps/
