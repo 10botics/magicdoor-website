@@ -197,6 +197,32 @@ export default function BlogPost({ post }) {
                   </div>
                 ))}
               </div>
+
+              <div className="mt-8">
+                <h3 className="text-xl md:text-2xl font-black text-gray-900 mb-3">🎬 流程示範影片</h3>
+                <a
+                  href="https://x.com/NotebookLM/status/2028556861050630632?s=20"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="group block relative w-full rounded-2xl overflow-hidden border border-cyan-100 bg-black"
+                >
+                  <img
+                    src="/notebooklm-cross-subject-1.png"
+                    alt="NotebookLM 影片預覽圖"
+                    className="w-full aspect-video object-cover opacity-80 group-hover:opacity-70 transition-opacity"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <span className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-white/95 text-cyan-700 text-2xl shadow-lg">
+                      ▶
+                    </span>
+                  </div>
+                  <div className="absolute left-4 right-4 bottom-4 text-white">
+                    <p className="text-base md:text-lg font-black">立即播放 NotebookLM 示範影片</p>
+                    <p className="text-xs md:text-sm text-white/85">點擊後於新分頁開啟 X 原帖觀看</p>
+                  </div>
+                </a>
+              </div>
             </section>
 
             <section className="mt-12">
@@ -263,35 +289,18 @@ export default function BlogPost({ post }) {
         {(isInfographicPost || isBreakingNewsPost) && (
           <section className="mt-12">
             <div className="w-full h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent mb-8" />
-            <div className="mb-6">
-              <h3 className="text-2xl md:text-3xl font-black text-gray-900 tracking-tight mb-3">
-                ✨ 立即製作首張客製化教材
-              </h3>
-              <p className="text-gray-700 leading-relaxed mb-3">
-                渴望親身體驗如此強大的功能？唯有「完整版」NotebookLM 才能讓創意全數兌現！
-              </p>
-              <p className="text-gray-600 leading-relaxed">
-                Magic Door 助您跨越技術門檻，無需 VPN 即可在校內原地接通全球頂尖 AI。我們確保您能即時應用最新、最全面的AI工具，從此不再受限，領先一步建立 AI 教學優勢。
-              </p>
-            </div>
             <div className="rounded-3xl border border-cyan-100/80 bg-gradient-to-br from-[#f8feff] via-white to-[#f1f9ff] p-8 md:p-10 shadow-sm">
-              <p className="text-sm font-bold tracking-[0.14em] uppercase text-[#00bbde] mb-3">Magic Door</p>
-              <h2 className="text-3xl md:text-3xl font-black text-gray-900 tracking-tight mb-4 md:whitespace-nowrap">
-                成為教材設計大師！
+              <p className="text-lg md:text-xl font-black text-gray-900 mb-3">渴望掌握如此強大功能？</p>
+              <h2 className="text-3xl md:text-3xl font-black text-gray-900 tracking-tight mb-4">
+                立即試用<span className="text-[#00bbde]">Magic Door</span>，成為教材設計大師！
               </h2>
               <p className="text-gray-600 leading-relaxed mb-6">
-                一鍵接通最強 AI 視覺化能力，讓學生更易理解重點，老師更快完成教材整理與課堂準備。
+                以非VPN方式，接通熱門AI工具，確保您能即時應用最新、最全面的AI工具，從此不再受限，領先一步建立 AI 教學優勢。
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
                 <Link
-                  href="/pricing"
-                  className="inline-flex items-center justify-center px-8 py-4 rounded-2xl bg-[#00bbde] text-white text-lg font-bold hover:bg-cyan-500 transition-colors"
-                >
-                  查詢報價
-                </Link>
-                <Link
                   href="/trial"
-                  className="inline-flex items-center justify-center px-6 py-4 rounded-2xl border border-cyan-200 text-cyan-700 font-semibold hover:bg-cyan-50 transition-colors"
+                  className="inline-flex items-center justify-center px-6 py-4 rounded-2xl bg-[#00bbde] text-white font-semibold hover:bg-cyan-500 transition-colors"
                 >
                   率先試用
                 </Link>
