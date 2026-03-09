@@ -4,6 +4,7 @@ import { useState } from 'react'
 const navLinks = [
   { href: '/', label: '首頁' },
   { href: '/pricing', label: '方案與收費' },
+  { href: '/blog', label: '網誌' },
   { href: '/faq', label: '常見問題' },
   { href: '/terms', label: '服務條款' },
 ]
