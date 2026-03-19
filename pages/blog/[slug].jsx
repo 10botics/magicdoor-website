@@ -23,7 +23,6 @@ function formatDate(dateStr) {
 }
 
 export default function BlogPost({ post }) {
-  const isInfographicPost = post.slug === '2026-03-notebooklm-text-to-infographic'
   const isBreakingNewsPost = post.slug === '2026-03-notebooklm-custom-infographic-style-breaking-news'
   const [carouselIndex, setCarouselIndex] = useState(0)
 
@@ -279,28 +278,26 @@ export default function BlogPost({ post }) {
           </>
         )}
 
-        {(isInfographicPost || isBreakingNewsPost) && (
-          <section className="mt-12">
-            <div className="w-full h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent mb-8" />
-            <div className="rounded-3xl border border-cyan-100/80 bg-gradient-to-br from-[#f8feff] via-white to-[#f1f9ff] p-8 md:p-10 shadow-sm">
-              <p className="text-lg md:text-xl font-black text-gray-900 mb-3">渴望掌握如此強大功能？</p>
-              <h2 className="text-3xl md:text-3xl font-black text-gray-900 tracking-tight mb-4">
-                立即試用<span className="text-[#00bbde]">Magic Door</span>，成為教材設計大師！
-              </h2>
-              <p className="text-gray-600 leading-relaxed mb-6">
-                以非VPN方式，接通熱門AI工具，確保您能即時應用最新、最全面的AI工具，從此不再受限，領先一步建立 AI 教學優勢。
-              </p>
-              <div className="flex flex-col sm:flex-row gap-3">
-                <Link
-                  href="/trial"
-                  className="inline-flex items-center justify-center px-6 py-4 rounded-2xl bg-[#00bbde] text-white font-semibold hover:bg-cyan-500 transition-colors"
-                >
-                  率先試用
-                </Link>
-              </div>
+        <section className="mt-12">
+          <div className="w-full h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent mb-8" />
+          <div className="rounded-3xl border border-cyan-100/80 bg-gradient-to-br from-[#f8feff] via-white to-[#f1f9ff] p-8 md:p-10 shadow-sm">
+            <p className="text-lg md:text-xl font-black text-gray-900 mb-3">AI工具 一門直達</p>
+            <h2 className="text-3xl md:text-3xl font-black text-gray-900 tracking-tight mb-4">
+              立即試用 <span className="text-[#00bbde]">Magic Door</span>，非 VPN 接通熱門 AI 工具
+            </h2>
+            <p className="text-gray-600 leading-relaxed mb-6">
+              以非 VPN 方式，接通 NotebookLM、AI Studio、ChatGPT 等熱門 AI 工具，確保您能即時應用最新、最全面的 AI 工具，從此不再受限，領先一步建立 AI 教學優勢。
+            </p>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <Link
+                href="/trial"
+                className="inline-flex items-center justify-center px-6 py-4 rounded-2xl bg-[#00bbde] text-white font-semibold hover:bg-cyan-500 transition-colors"
+              >
+                立即試用
+              </Link>
             </div>
-          </section>
-        )}
+          </div>
+        </section>
 
         <div className="mt-14 pt-10 border-t border-gray-100">
           <Link href="/blog" className="text-sm font-semibold text-indigo-600 hover:underline">
