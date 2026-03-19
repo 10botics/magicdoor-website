@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: 【教學新突破🚀】學生字多不想看？教材一鍵變精美懶人包✨
 date: 2026-03-09
 excerpt: NotebookLM 一鍵生成 infographic，讓教學內容由長文瞬間轉為學生易吸收的視覺化懶人包。
