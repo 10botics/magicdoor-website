@@ -10,7 +10,9 @@ const individualPlans = [
     dailyLimit: '3 小時',
     deviceLimit: '1 個',
     teacherPrice: 'HK$150',
+    teacherOriginal: 'HK$215',
     studentPrice: 'HK$60',
+    studentOriginal: 'HK$88',
     featured: false,
   },
   {
@@ -20,7 +22,9 @@ const individualPlans = [
     dailyLimit: '6 小時',
     deviceLimit: '1 個',
     teacherPrice: 'HK$225',
+    teacherOriginal: 'HK$320',
     studentPrice: 'HK$90',
+    studentOriginal: 'HK$128',
     featured: false,
   },
   {
@@ -30,6 +34,7 @@ const individualPlans = [
     dailyLimit: '20 小時',
     deviceLimit: '5 個',
     unifiedPrice: 'HK$699',
+    unifiedOriginal: 'HK$999',
     featured: false,
     badge: '高用量首選',
   },
@@ -103,8 +108,16 @@ export default function Pricing() {
               </div>
 
               <div className={`mt-8 mb-2 rounded-2xl border p-4 ${plan.name === '基礎' ? 'border-slate-200 bg-white' : 'border-white/20 bg-white/10'}`}>
+                <div className={`text-center mb-2`}>
+                  <span className={`text-xs font-semibold px-2 py-0.5 rounded-full ${plan.name === '基礎' ? 'bg-rose-100 text-rose-600' : 'bg-white/20 text-white'}`}>
+                    限時優惠 7折
+                  </span>
+                </div>
                 {plan.unifiedPrice ? (
                   <div className="py-2 text-center">
+                    <div className={`text-sm line-through mb-1 ${plan.name === '基礎' ? 'text-slate-400' : 'text-white/50'}`}>
+                      劃一{plan.unifiedOriginal}/ 年
+                    </div>
                     <span className={`font-black text-3xl md:text-4xl leading-none whitespace-nowrap ${plan.name === '基礎' ? 'text-brand-primaryDark' : 'text-white'}`}>
                       劃一{plan.unifiedPrice}/ 年
                     </span>
@@ -113,17 +126,27 @@ export default function Pricing() {
                   <>
                     <div className="flex items-center justify-between py-2 border-b border-current/10">
                       <span className={plan.name === '基礎' ? 'text-slate-500' : 'text-gray-300'}>老師</span>
-                      <span className={`font-bold ${plan.name === '基礎' ? 'text-brand-primaryDark' : 'text-white'}`}>
-                        {plan.teacherPrice}
-                        <span className={`ml-1 text-xs font-medium ${plan.name === '基礎' ? 'text-slate-500' : 'text-gray-300'}`}>/ 人 / 年</span>
-                      </span>
+                      <div className="text-right">
+                        <div className={`text-xs line-through ${plan.name === '基礎' ? 'text-slate-400' : 'text-white/50'}`}>
+                          {plan.teacherOriginal} / 人 / 年
+                        </div>
+                        <span className={`font-bold ${plan.name === '基礎' ? 'text-brand-primaryDark' : 'text-white'}`}>
+                          {plan.teacherPrice}
+                          <span className={`ml-1 text-xs font-medium ${plan.name === '基礎' ? 'text-slate-500' : 'text-gray-300'}`}>/ 人 / 年</span>
+                        </span>
+                      </div>
                     </div>
                     <div className="flex items-center justify-between py-2">
                       <span className={plan.name === '基礎' ? 'text-slate-500' : 'text-gray-300'}>學生</span>
-                      <span className={`font-bold ${plan.name === '基礎' ? 'text-brand-primaryDark' : 'text-white'}`}>
-                        {plan.studentPrice}
-                        <span className={`ml-1 text-xs font-medium ${plan.name === '基礎' ? 'text-slate-500' : 'text-gray-300'}`}>/ 人 / 年</span>
-                      </span>
+                      <div className="text-right">
+                        <div className={`text-xs line-through ${plan.name === '基礎' ? 'text-slate-400' : 'text-white/50'}`}>
+                          {plan.studentOriginal} / 人 / 年
+                        </div>
+                        <span className={`font-bold ${plan.name === '基礎' ? 'text-brand-primaryDark' : 'text-white'}`}>
+                          {plan.studentPrice}
+                          <span className={`ml-1 text-xs font-medium ${plan.name === '基礎' ? 'text-slate-500' : 'text-gray-300'}`}>/ 人 / 年</span>
+                        </span>
+                      </div>
                     </div>
                   </>
                 )}
