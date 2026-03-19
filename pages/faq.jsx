@@ -13,7 +13,16 @@ const groups = [
       {
         id: 'session-expired',
         q: '連線時間到了會怎樣？',
-        a: '時限屆滿後，AI 工具頁面會顯示地區不支援的提示，您的其他網頁瀏覽不受影響。您只需重新點擊 Magic Door 擴充功能內的切換開關，即可再次建立連線。',
+        a: (
+          <>
+            時限屆滿後，AI 工具頁面會顯示地區不支援的提示，您的其他網頁瀏覽或 App 使用不受影響。如需重新連線：<strong>Chrome 擴充功能</strong>用戶只需再次點擊擴充功能內的切換開關；<strong>iPad / iPhone App</strong> 用戶則在 App 主頁點擊「Connect」即可。
+          </>
+        ),
+      },
+      {
+        id: 'cross-platform',
+        q: '我現有的訂閱可以同時用於 Chrome 擴充功能和 iPad App 嗎？',
+        a: '可以。同一個帳號可在 Chrome 擴充功能及 iPad / iPhone App 上登入使用，共用同一訂閱配額。請注意：每次連線（無論是擴充功能還是 App）均佔用一個裝置連線名額。Basic 及 Plus 計劃每次只允許一個裝置同時連線；若需多裝置同時連線，請選用 MAX 計劃（最多 5 個裝置）。',
       },
       {
         id: 'quota-reset',
@@ -31,7 +40,16 @@ const groups = [
       {
         id: 'device-support',
         q: '是否適用於所有裝置？',
-        a: '目前 Magic Door 僅支援電腦版 Chrome 瀏覽器。由於技術限制，暫時未能於手機、平板電腦或 Chrome 以外的瀏覽器上使用。',
+        a: (
+          <>
+            Magic Door 目前支援以下平台：
+            <br /><br />
+            <strong>電腦版 Chrome 擴充功能</strong>：適用於 Windows 及 macOS 的 Chrome 瀏覽器。<br />
+            <strong>iPhone / iPad App</strong>：適用於 iOS / iPadOS 17.0 或以上版本，可於 App Store 免費下載。
+            <br /><br />
+            暫時未能於 Android、Chrome 以外的瀏覽器（如 Safari、Edge）或其他平台上使用。
+          </>
+        ),
       },
     ],
   },
@@ -102,7 +120,7 @@ const groups = [
           <>
             <strong>不會。</strong> Magic Door 無法看到您的登入帳號、密碼，也無法看到您與 AI 工具之間的對話內容。
             <br /><br />
-            從技術角度解釋：您的瀏覽器與 AI 工具之間的通訊，採用 HTTPS/TLS 協定進行<strong>端對端加密</strong>。這層加密由 AI 工具的服務提供商負責，Magic Door 作為連線通道，只負責將已加密的流量傳送至目的地，並無能力解密或讀取內容——就如同郵差只負責遞送密封信件，無法得知信件內容。
+            從技術角度解釋：您的裝置與 AI 工具之間的通訊，採用 HTTPS/TLS 協定進行<strong>端對端加密</strong>。這層加密由 AI 工具的服務提供商負責，Magic Door 作為連線通道，只負責將已加密的流量傳送至目的地，並無能力解密或讀取內容——就如同郵差只負責遞送密封信件，無法得知信件內容。
             <br /><br />
             我們僅收集維持服務運作所需的最少量資訊（如帳號識別及連線時間記錄），絕不記錄您的登入憑證或 AI 對話數據。詳情請參閱我們的服務條款。
           </>

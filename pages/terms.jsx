@@ -4,7 +4,7 @@ import Link from 'next/link'
 const sections = [
   {
     title: 'About the Service',
-    content: 'Magic Door is a smart gateway service provided by 10Botics Ltd. It is designed to help users access geo-restricted AI tools without the use of a VPN. The Service is delivered via a Chrome extension. It is available exclusively to Customers and their members holding a valid subscription. Approved Tools means the third-party AI tools expressly listed in the applicable order form, quotation, statement of work, or other written confirmation between 10Botics Ltd and the Customer for that subscription term. Only Approved Tools are within the compatibility scope of the Service for that Customer. 10Botics Ltd does not publish a universal list of supported third-party tools, and tool compatibility may vary by Customer configuration, environment, and subscription scope.',
+    content: 'Magic Door is a smart gateway service provided by 10Botics Ltd. It is designed to help users access geo-restricted AI tools without the use of a VPN. The Service is delivered via a Chrome extension and an iPhone / iPad App. It is available exclusively to Customers and their members holding a valid subscription. Approved Tools means the third-party AI tools expressly listed in the applicable order form, quotation, statement of work, or other written confirmation between 10Botics Ltd and the Customer for that subscription term. Only Approved Tools are within the compatibility scope of the Service for that Customer. 10Botics Ltd does not publish a universal list of supported third-party tools, and tool compatibility may vary by Customer configuration, environment, and subscription scope.',
   },
   {
     title: 'Eligibility',
@@ -12,7 +12,7 @@ const sections = [
   },
   {
     title: 'Concurrent Connection Policy',
-    content: 'Each account may only be connected on one device at a time under the Basic and Plus plans. Simultaneous connections from multiple devices are only permitted under the MAX plan, subject to the concurrent connection limits specified in the applicable plan description or order form. Logging in on a new device beyond the permitted limit will automatically terminate the oldest existing active connection.',
+    content: 'Each account is subject to concurrent connection limits as specified in the applicable plan description or order form. Logging in on a new device beyond the permitted limit will automatically terminate the oldest existing active connection.',
   },
   {
     title: 'Prohibited Activities',

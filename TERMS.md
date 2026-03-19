@@ -7,7 +7,7 @@ These Terms of Service ("Terms") govern your use of Magic Door (the "Service"), 
 ---
 
 ### 1. About the Service
-Magic Door is a smart gateway service designed to help users access geo-restricted AI tools without the use of a VPN. The Service is delivered via a Chrome extension. It is available exclusively to Customers and their members holding a valid subscription.
+Magic Door is a smart gateway service designed to help users access geo-restricted AI tools without the use of a VPN. The Service is delivered via a Chrome extension and an iPhone / iPad App. It is available exclusively to Customers and their members holding a valid subscription.
 
 **Approved Tools:** "Approved Tools" means the third-party AI tools expressly listed in the applicable order form, quotation, statement of work, or other written confirmation between 10Botics Ltd and the Customer for that subscription term. Only Approved Tools are within the compatibility scope of the Service for that Customer. 10Botics Ltd does not publish a universal list of supported third-party tools, and tool compatibility may vary by Customer configuration, environment, and subscription scope.
 
@@ -15,7 +15,7 @@ Magic Door is a smart gateway service designed to help users access geo-restrict
 The Service is available only to users with a valid subscription, free trial, or approved free access. Users must sign in with an approved Google account (email address) and must have been added to the member list by a subscription administrator or 10Botics Ltd. 10Botics Ltd reserves the right to refuse or terminate access for any user at its discretion.
 
 ### 3. Concurrent Connection Policy
-Each account may only be connected on one device at a time under the Basic and Plus plans. Simultaneous connections from multiple devices are only permitted under the MAX plan, subject to the concurrent connection limits specified in the applicable plan description or order form. Logging in on a new device beyond the permitted limit will automatically terminate the oldest existing active connection.
+Each account is subject to concurrent connection limits as specified in the applicable plan description or order form. Logging in on a new device beyond the permitted limit will automatically terminate the oldest existing active connection.
 
 ### 4. Prohibited Activities
 Users must not:

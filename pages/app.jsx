@@ -10,7 +10,7 @@ const sellingPoints = [
   {
     title: '熱門 AI 工具，盡在指間',
     description:
-      '一 App 打通 NotebookLM、AI Studio、ChatGPT 等，思路不中斷，掌握流暢教學節奏。',
+      '一 App 直通多款頂尖 AI 工具，思路不中斷，掌握流暢教學節奏。',
   },
   {
     title: '無需逐一安裝，裝備馬上就位',
@@ -22,39 +22,35 @@ const sellingPoints = [
 export default function AppLandingPage() {
   return (
     <Layout
-      title="Magic Door App 正式登場｜老師可教，學生可用"
-      description="支援 iPad、iPhone版，一個 App 直達 NotebookLM、AI Studio、ChatGPT，讓 AI 教學在課堂即時落地。"
+      title="Magic Door App｜AI工具 一門直達，現已登陸 iPad"
+      description="同一扇 Magic Door，現延伸至 iPad。師生共用，課堂隨開隨用，AI 工具即時到位。"
     >
       <section className="px-6 pt-16 pb-10 bg-gradient-to-br from-[#eef8ff] via-white to-[#f4f9ff]">
         <div className="max-w-6xl mx-auto grid lg:grid-cols-[1.05fr_0.95fr] gap-8 items-center">
           <div>
             <p className="inline-flex items-center gap-2 text-base md:text-lg font-bold tracking-[0.1em] uppercase text-[#00bbde] mb-5">
-              Magic Door App
+              Magic Door App · 現已登陸 iPad
             </p>
             <h1 className="font-black text-gray-900 tracking-tight leading-[1.08]">
               <span className="block whitespace-nowrap text-[clamp(2.1rem,8vw,4.5rem)]">
-                打開{' '}
+                AI工具
+              </span>
+              <span className="block whitespace-nowrap text-[clamp(2.1rem,8vw,4.5rem)]">
                 <span className="relative inline-block">
                   <span className="bg-gradient-to-r from-[#00bbde] via-[#3b82f6] to-[#6366f1] bg-clip-text text-transparent">
-                    AI 兵器庫
+                    一門直達
                   </span>
                   <span className="absolute -inset-x-1 bottom-0.5 h-3 rounded-full bg-cyan-200/50 -z-10" aria-hidden="true" />
                 </span>
-                之門
               </span>
-              <span className="block whitespace-nowrap text-[clamp(1.35rem,4.8vw,2.2rem)] text-gray-900 mt-3">
-                引領
-                <span className="mx-1 relative inline-block px-0.5 text-[#6366f1]">
-                  教、學並進
-                  <span className="absolute left-0 right-0 -bottom-0.5 h-2 rounded-sm bg-[#c7d2fe]/80 -z-10" aria-hidden="true" />
-                </span>
-                新課堂
+              <span className="block whitespace-nowrap text-[clamp(1.35rem,4.8vw,2.2rem)] text-gray-500 mt-3 font-bold">
+                師生共用，課堂隨開隨用
               </span>
             </h1>
             <p className="mt-5 text-lg text-gray-600 leading-relaxed max-w-2xl">
-              支援 iPad 靈活操作，教與學同步升級；
+              同一扇門，現已延伸至 iPad —
               <br />
-              頂尖工具一站接通，最強裝備隨手可得
+              老師教、學生學，AI 支援即時到位
             </p>
 
             <div className="mt-4 flex flex-wrap gap-3">
@@ -74,7 +70,7 @@ export default function AppLandingPage() {
                 href={APP_DOWNLOAD_PATH}
                 className="inline-flex items-center justify-center px-11 py-5 rounded-3xl bg-[#00bbde] text-white text-xl font-bold hover:bg-cyan-500 transition-colors"
               >
-                立即下載
+                立即試用
               </a>
             </div>
           </div>
@@ -118,7 +114,7 @@ export default function AppLandingPage() {
         </div>
       </section>
 
-      <section className="px-6 pb-20">
+      <section className="px-6 pt-16 pb-20">
         <div className="max-w-6xl mx-auto">
           <h2 className="font-black tracking-tight text-gray-900 mb-3 leading-tight text-center">
             <span className="block text-2xl md:text-3xl text-gray-900">技術再突破！</span>
@@ -144,7 +140,7 @@ export default function AppLandingPage() {
       <section className="px-6 pb-12">
         <div className="max-w-6xl mx-auto rounded-3xl border border-gray-100 bg-white p-6 md:p-8 shadow-sm">
           <div className="flex items-center justify-between gap-4 mb-4">
-            <h2 className="text-2xl md:text-3xl font-black text-gray-900 tracking-tight">極簡操作，直達 AI 兵器庫</h2>
+            <h2 className="text-2xl md:text-3xl font-black text-gray-900 tracking-tight">極簡操作，即開即用</h2>
             <span className="text-xs md:text-sm font-semibold text-cyan-600 uppercase tracking-[0.15em]">
               App Experience
             </span>
@@ -152,46 +148,49 @@ export default function AppLandingPage() {
           <p className="text-gray-600 mb-4 leading-relaxed">
             介面清晰直觀，開啟後只需幾個步驟，即可投入課堂，教學節奏一氣呵成。
           </p>
-          <p className="text-xs text-gray-400 mb-3">建議使用全螢幕播放，以獲最佳畫質。</p>
+          {/* iPad landscape mockup */}
           <div className="max-w-4xl mx-auto">
-            <video
-              className="w-full rounded-2xl border border-gray-100 bg-black"
-              controls
-              playsInline
-              preload="metadata"
-              src="/magicdoor-app-demo.mp4"
-            />
+            <div className="relative bg-[#d1d1d6] rounded-[2.8rem] p-[14px] shadow-[0_20px_60px_rgba(0,0,0,0.18),inset_0_1px_0_rgba(255,255,255,0.6)]">
+              {/* Power button (right short edge — was top edge in portrait) */}
+              <div className="absolute right-[-3px] top-[20%] w-[3px] h-10 rounded-r-full bg-[#b0b0b5]" aria-hidden="true" />
+              {/* Camera dot (top long edge, right side — front camera in landscape) */}
+              <div className="absolute top-[7px] right-[8%] w-2.5 h-2.5 rounded-full bg-[#b0b0b5] shadow-inner" aria-hidden="true" />
+              {/* Screen */}
+              <div className="rounded-[2rem] overflow-hidden bg-black ring-1 ring-black/10">
+                <img
+                  src="/ipad_screencap.jpg"
+                  alt="Magic Door App 在 iPad 上的介面截圖"
+                  className="w-full block"
+                />
+              </div>
+              {/* Bottom shine */}
+              <div className="pointer-events-none absolute inset-x-4 bottom-2 h-3 rounded-full bg-white/30 blur-sm" aria-hidden="true" />
+            </div>
           </div>
         </div>
       </section>
 
       <section className="px-6 pb-24">
         <div className="max-w-6xl mx-auto rounded-3xl bg-gray-900 text-white p-8 md:p-12 text-center">
-          <p className="text-cyan-300 font-bold uppercase tracking-[0.15em] text-sm mb-3">One App. Elevate Teaching & Learning.</p>
+          <p className="text-cyan-300 font-bold uppercase tracking-[0.15em] text-sm mb-3">AI工具 一門直達</p>
           <h2 className="text-3xl md:text-5xl font-black tracking-tight leading-tight">
-            一 App 升級
+            同一扇門，
             <span className="relative inline-block text-[#6366f1]">
-              師
+              師生
               <span className="absolute left-0 right-0 -bottom-1 h-2 rounded-sm bg-indigo-200/70 -z-10" aria-hidden="true" />
             </span>
-            <span className="relative inline-block text-[#6366f1]">
-              生
-              <span className="absolute left-0 right-0 -bottom-1 h-2 rounded-sm bg-indigo-200/70 -z-10" aria-hidden="true" />
-            </span>
-            AI 戰力。
+            皆達。
           </h2>
           <p className="mt-4 text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            立即下載 Magic Door App，一站式打通 AI
-            <span className="mx-1 text-white font-semibold underline decoration-cyan-300/80 decoration-2 underline-offset-4">教學</span>
-            與
-            <span className="mx-1 text-white font-semibold underline decoration-cyan-300/80 decoration-2 underline-offset-4">學習</span>
-            ，讓最新科技走入課室，成為師生日常。
+            Magic Door 現已登陸 iPad，師生共用同一平台，
+            <span className="mx-1 text-white font-semibold underline decoration-cyan-300/80 decoration-2 underline-offset-4">課堂即開即用</span>
+            ，AI 支援隨時到位。
           </p>
           <a
             href={APP_DOWNLOAD_PATH}
             className="mt-8 inline-flex items-center justify-center px-10 py-4 rounded-2xl bg-white text-gray-900 font-bold text-lg hover:bg-gray-100 transition-colors"
           >
-            立即下載
+            立即試用
           </a>
         </div>
       </section>
