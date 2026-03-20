@@ -1,9 +1,12 @@
 ---
 published: true
-title: NotebookLM 是甚麼？為何香港老師值得用（入門篇）
+title: NotebookLM 是甚麼？點解值得老師留意？（入門篇）
 date: 2026-03-02
-excerpt: 用幾分鐘搞清楚 NotebookLM 嘅定位：以你上傳嘅教材為本、點解同「普通聊天機械人」唔同，以及之後可以點再深入閱讀。
+excerpt: 用幾分鐘搞清楚 NotebookLM 嘅定位：以你上傳嘅教材為本、點解同「普通聊天機械人」唔同，以及老師喺備課同課堂上點樣實際應用。
 coverImage: /blog/2026-03-02-notebooklm-intro-teachers-hk/hero.jpg
+related:
+  - 2026-03-03-notebooklm-9-features
+  - 2026-03-04-notebooklm-hk-without-vpn
 ---
 
 ![學校備課場景示意：教師桌面、筆記本電腦與教材（生成圖）](/blog/2026-03-02-notebooklm-intro-teachers-hk/hero.jpg)

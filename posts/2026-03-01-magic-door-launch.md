@@ -3,6 +3,9 @@ published: true
 title: Magic Door 正式推出——為香港教育界打開 AI 之門
 date: 2026-03-01
 excerpt: 歷經數月研發，Magic Door 今日正式向香港中小學教師開放試用。一個 Chrome 擴充功能，讓您在課室或家中即時接通 ChatGPT、Claude 等全球主流 AI 工具。
+related:
+  - 2026-03-02-notebooklm-intro-teachers-hk
+  - 2026-03-04-notebooklm-hk-without-vpn
 ---
 
 ## 為何推出 Magic Door？

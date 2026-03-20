@@ -3,6 +3,9 @@ published: true
 title: NotebookLM 香港需要 VPN 嗎？2026 最新用法
 date: 2026-03-04
 excerpt: NotebookLM 在香港受地區限制，不少老師第一反應是用 VPN。但 VPN 在學校環境有不少風險——本文拆解為何 VPN 不是最佳選擇，以及香港學校目前有哪些替代方案。
+related:
+  - 2026-03-02-notebooklm-intro-teachers-hk
+  - 2026-03-05-notebooklm-google-workspace-hk
 ---
 
 Google 的 NotebookLM 是近年最受教育界討論的 AI 工具之一：上傳 PDF、網頁、影片，AI 即時整理摘要、生成語音概覽，幫老師省去大量備課時間。

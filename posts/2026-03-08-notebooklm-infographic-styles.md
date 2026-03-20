@@ -3,6 +3,9 @@ published: true
 title: NotebookLM 新增 10 款資訊圖表風格，一鍵將筆記變成視覺化摘要
 date: 2026-03-08
 excerpt: Google NotebookLM 推出全新資訊圖表（Infographic）功能更新，提供 10 種預設視覺風格，從「專業商務」到「卡通可愛」，老師製作教學材料從未如此簡單。
+related:
+  - 2026-03-09-notebooklm-text-to-infographic
+  - 2026-03-10-notebooklm-custom-infographic-style-breaking-news
 ---
 
 Google NotebookLM 最新更新為資訊圖表功能帶來重大升級——新增了 **10 種預設視覺風格**，讓您將文件、筆記或研究資料一鍵轉化為精美的視覺摘要，完全不需要設計技能。

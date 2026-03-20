@@ -3,9 +3,12 @@ published: true
 title: NotebookLM 9 大 Studio 功能完整解說：香港老師必讀（2026）
 date: 2026-03-03
 excerpt: 逐一拆解 NotebookLM Studio 的 9 種輸出功能——由音頻概覽到 Slide Deck，每個功能點解對老師有用，一文全攻略。
+related:
+  - 2026-03-02-notebooklm-intro-teachers-hk
+  - 2026-03-08-notebooklm-infographic-styles
 ---
 
-**建議先讀：** 如果你未用過 NotebookLM，可先睇入門篇 **[NotebookLM 是甚麼？為何香港老師值得用（入門篇）](/blog/2026-03-02-notebooklm-intro-teachers-hk)**，再返嚟讀下面 Studio 九大輸出。
+**建議先讀：** 如果你未用過 NotebookLM，可先睇入門篇 **[NotebookLM 是甚麼？點解值得老師留意？（入門篇）](/blog/2026-03-02-notebooklm-intro-teachers-hk)**，再返嚟讀下面 Studio 九大輸出。
 
 NotebookLM 的 Studio 面板是它最強大的地方。上傳教學材料後，AI 可以自動生成 9 種不同格式的輸出——每種格式都有其最適合的用途。
 

@@ -3,6 +3,9 @@ published: true
 title: 學校買 Gemini Enterprise 就有完整 NotebookLM？功能對比後你可能會後悔
 date: 2026-03-06
 excerpt: 不少學校 IT 管理員以為購買 Gemini Enterprise 就能讓全校使用完整的 NotebookLM。但企業版和消費者版是兩個截然不同的產品，功能差距比你想像中大。
+related:
+  - 2026-03-05-notebooklm-google-workspace-hk
+  - 2026-03-03-notebooklm-9-features
 ---
 
 隨著 NotebookLM 在教育界愈來愈受歡迎，不少學校開始探討：有沒有辦法讓全校師生「合規地」使用 NotebookLM，而不是靠 VPN 繞過地區限制？

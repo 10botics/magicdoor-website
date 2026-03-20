@@ -1,7 +1,8 @@
 import Link from 'next/link'
 import { useState } from 'react'
 import Layout from '../../components/Layout'
-import { getAllPosts, getPostBySlug } from '../../lib/posts'
+import RelatedPosts from '../../components/RelatedPosts'
+import { getAllPosts, getPostBySlug, getRelatedPostsMeta } from '../../lib/posts'
 
 export async function getStaticPaths() {
   const posts = getAllPosts()
@@ -13,7 +14,8 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const post = await getPostBySlug(params.slug)
-  return { props: { post } }
+  const relatedPosts = getRelatedPostsMeta(post.related)
+  return { props: { post, relatedPosts } }
 }
 
 function formatDate(dateStr) {
@@ -22,7 +24,7 @@ function formatDate(dateStr) {
   return d.toLocaleDateString('zh-HK', { year: 'numeric', month: 'long', day: 'numeric' })
 }
 
-export default function BlogPost({ post }) {
+export default function BlogPost({ post, relatedPosts }) {
   const isBreakingNewsPost = post.slug === '2026-03-10-notebooklm-custom-infographic-style-breaking-news'
   const [carouselIndex, setCarouselIndex] = useState(0)
 
@@ -277,6 +279,8 @@ export default function BlogPost({ post }) {
             </section>
           </>
         )}
+
+        <RelatedPosts posts={relatedPosts} />
 
         <section className="mt-12">
           <div className="w-full h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent mb-8" />

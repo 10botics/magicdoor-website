@@ -3,6 +3,9 @@ published: true
 title: NotebookLM 新功能：將筆記變成電影級短片，老師備課新利器
 date: 2026-03-07
 excerpt: Google NotebookLM 推出全新「Cinematic Video Overviews」功能，將您的研究筆記或文件一鍵轉化為動態影片。這對香港教師來說意味著什麼？
+related:
+  - 2026-03-03-notebooklm-9-features
+  - 2026-03-08-notebooklm-infographic-styles
 ---
 
 Google 剛於 2026 年 3 月 4 日為 [NotebookLM](https://notebooklm.google.com) 推出了重大更新——**Cinematic Video Overviews**（電影式影片摘要）。這項功能可以將您上傳的文件、筆記或研究資料，自動生成一段有動畫、有旁白的完整短片，而不只是靜態的投影片。

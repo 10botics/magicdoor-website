@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.magicdoor.cc
+
+# Sitemaps
+Sitemap: https://www.magicdoor.cc/sitemap.xml

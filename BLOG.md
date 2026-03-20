@@ -39,6 +39,22 @@ excerpt: 一句話介紹這篇文章，會顯示在網誌列表頁。
 | `title`   | ✅   | 文章標題，顯示於列表和文章頁             |
 | `date`    | ✅   | 發佈日期（`YYYY-MM-DD`），用於排序       |
 | `excerpt` | ✅   | 文章摘要，顯示於列表卡片和 SEO 描述     |
+| `related` | 否   | 相關文章：slug 列表（與檔名一致，不含 `.md`），顯示於文末「相關文章」區塊。只會顯示 **已發佈**（`published: true`）文章。 |
+
+### 相關文章 `related` 範例
+
+```yaml
+---
+title: 文章標題
+date: 2026-04-15
+excerpt: 摘要文字
+related:
+  - 2026-03-03-notebooklm-9-features
+  - 2026-03-04-notebooklm-hk-without-vpn
+---
+```
+
+順序會按你在列表中排列的順序顯示。
 
 ---
 

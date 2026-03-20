@@ -3,6 +3,9 @@ published: true
 title: 有 Google Workspace for Education 都用唔到 NotebookLM？原來係咁解
 date: 2026-03-05
 excerpt: 不少學校 IT 管理員和老師都以為：學校有 Google Workspace for Education，就可以使用 NotebookLM。但事實並非如此。本文拆解兩者的關係，以及香港學校的實際解法。
+related:
+  - 2026-03-04-notebooklm-hk-without-vpn
+  - 2026-03-06-notebooklm-enterprise-vs-consumer-hk
 ---
 
 香港不少學校已採用 **Google Workspace for Education**——老師用 Google 帳號登入、學生用學校電郵交功課、IT 部門透過管理員控制台管理裝置。
