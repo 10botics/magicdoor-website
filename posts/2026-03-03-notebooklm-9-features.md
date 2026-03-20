@@ -1,15 +1,17 @@
 ---
 published: true
 title: NotebookLM 9 大 Studio 功能完整解說：香港老師必讀（2026）
-date: 2026-03-20
+date: 2026-03-03
 excerpt: 逐一拆解 NotebookLM Studio 的 9 種輸出功能——由音頻概覽到 Slide Deck，每個功能點解對老師有用，一文全攻略。
 ---
+
+**建議先讀：** 如果你未用過 NotebookLM，可先睇入門篇 **[NotebookLM 是甚麼？為何香港老師值得用（入門篇）](/blog/2026-03-02-notebooklm-intro-teachers-hk)**，再返嚟讀下面 Studio 九大輸出。
 
 NotebookLM 的 Studio 面板是它最強大的地方。上傳教學材料後，AI 可以自動生成 9 種不同格式的輸出——每種格式都有其最適合的用途。
 
 以下逐一拆解，方便老師按需要選用。
 
-![NotebookLM Studio 面板，顯示全部 9 種輸出類型](/blog/2026-03-notebooklm-enterprise-vs-consumer-hk/notebooklm-studio-outputs.png)
+![NotebookLM Studio 面板，顯示全部 9 種輸出類型](/blog/2026-03-06-notebooklm-enterprise-vs-consumer-hk/notebooklm-studio-outputs.png)
 
 ---
 
@@ -72,7 +74,7 @@ https://www.youtube.com/watch?v=Ymc3tLDt6O4
 
 可透過 Prompt 指定主題色、強調重點或設定調性，生成後可下載 PNG 圖片直接用於教學簡報或分享。
 
-![NotebookLM Infographic 實測示範](/blog/2026-03-notebooklm-9-features/infographic-demo.png)
+![NotebookLM Infographic 實測示範](/blog/2026-03-03-notebooklm-9-features/infographic-demo.png)
 
 ---
 
@@ -84,7 +86,7 @@ https://www.youtube.com/watch?v=Ymc3tLDt6O4
 
 老師可以用自己的教學材料直接生成初稿，再逐張輸入 Prompt 調整，大幅節省製作簡報的時間。
 
-![NotebookLM Slide Deck 介面（圖片來源：Google）](/blog/2026-03-notebooklm-9-features/slide-deck-01-02.webp)
+![NotebookLM Slide Deck 介面（圖片來源：Google）](/blog/2026-03-03-notebooklm-9-features/slide-deck-01-02.webp)
 
 https://www.youtube.com/watch?v=8BXQWJ-54mc
 
@@ -104,7 +106,7 @@ https://www.youtube.com/watch?v=8BXQWJ-54mc
 
 Quiz 和 Flashcards 都支援 iPhone / iPad App，學生可以在課堂或課外使用。
 
-![NotebookLM Quiz 和 Flashcards 介面（圖片來源：Google）](/blog/2026-03-notebooklm-9-features/quiz-flashcard.png)
+![NotebookLM Quiz 和 Flashcards 介面（圖片來源：Google）](/blog/2026-03-03-notebooklm-9-features/quiz-flashcard.png)
 
 ---
 
@@ -114,7 +116,7 @@ Quiz 和 Flashcards 都支援 iPhone / iPad App，學生可以在課堂或課外
 
 適合老師整理文獻中的比較數據、研究結果或統計資料。
 
-![NotebookLM Data Tables 自訂設定（圖片來源：Google）](/blog/2026-03-notebooklm-9-features/data-tables.png)
+![NotebookLM Data Tables 自訂設定（圖片來源：Google）](/blog/2026-03-03-notebooklm-9-features/data-tables.png)
 
 ---
 

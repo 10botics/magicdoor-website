@@ -1,7 +1,7 @@
 ---
 published: true
 title: 學校買 Gemini Enterprise 就有完整 NotebookLM？功能對比後你可能會後悔
-date: 2026-03-19
+date: 2026-03-06
 excerpt: 不少學校 IT 管理員以為購買 Gemini Enterprise 就能讓全校使用完整的 NotebookLM。但企業版和消費者版是兩個截然不同的產品，功能差距比你想像中大。
 ---
 
@@ -58,7 +58,7 @@ https://notebooklm.cloud.google.com/REGION/?project=PROJECT_NUMBER
 | **單字卡 (Flashcards)** | **✓** | **✗** |
 | **數據表格 (Data Tables)** | **✓** | **✗** |
 
-![消費者版 NotebookLM Studio 面板，顯示全部輸出類型](/blog/2026-03-notebooklm-enterprise-vs-consumer-hk/notebooklm-studio-outputs.png)
+![消費者版 NotebookLM Studio 面板，顯示全部輸出類型](/blog/2026-03-06-notebooklm-enterprise-vs-consumer-hk/notebooklm-studio-outputs.png)
 
 企業版只有四種輸出類型。消費者版有九種，當中包括最受教育工作者歡迎的幾項功能：
 

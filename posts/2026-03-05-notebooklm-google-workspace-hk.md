@@ -1,7 +1,7 @@
 ---
 published: true
 title: 有 Google Workspace for Education 都用唔到 NotebookLM？原來係咁解
-date: 2026-03-18
+date: 2026-03-05
 excerpt: 不少學校 IT 管理員和老師都以為：學校有 Google Workspace for Education，就可以使用 NotebookLM。但事實並非如此。本文拆解兩者的關係，以及香港學校的實際解法。
 ---
 
@@ -44,11 +44,11 @@ excerpt: 不少學校 IT 管理員和老師都以為：學校有 Google Workspac
 
 **選項一：購買 NotebookLM Enterprise（Google Cloud）**
 
-NotebookLM 有企業版，透過 Google Cloud 獨立採購，使用獨立網址存取，不受同樣的地區限制。但這是一個完全獨立的產品，部署需要 Google Cloud 環境，由 IT 部門管理，而且企業版的 Studio 輸出功能比消費者版少。適合對資料合規有高要求的大型機構，對一般中小學而言門檻較高。詳細比較可參考[這篇文章](/blog/2026-03-notebooklm-enterprise-vs-consumer-hk)。
+NotebookLM 有企業版，透過 Google Cloud 獨立採購，使用獨立網址存取，不受同樣的地區限制。但這是一個完全獨立的產品，部署需要 Google Cloud 環境，由 IT 部門管理，而且企業版的 Studio 輸出功能比消費者版少。適合對資料合規有高要求的大型機構，對一般中小學而言門檻較高。詳細比較可參考[這篇文章](/blog/2026-03-06-notebooklm-enterprise-vs-consumer-hk)。
 
 **選項二：使用 VPN**
 
-技術上可行，但在學校環境有不少隱患——可能違反學校 IT 政策、連線不穩定、資料經第三方伺服器，且難以在全班裝置上統一部署。詳細分析可參考[這篇文章](/blog/2026-03-notebooklm-hk-without-vpn)。
+技術上可行，但在學校環境有不少隱患——可能違反學校 IT 政策、連線不穩定、資料經第三方伺服器，且難以在全班裝置上統一部署。詳細分析可參考[這篇文章](/blog/2026-03-04-notebooklm-hk-without-vpn)。
 
 **選項三：Magic Door**
 

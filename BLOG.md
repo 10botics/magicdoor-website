@@ -3,7 +3,7 @@
 ## 快速步驟
 
 1. 在 `website/posts/` 目錄下建立一個新的 `.md` 檔案
-2. 以 `YYYY-MM-slug.md` 格式命名，例如：`2026-04-ai-tips.md`
+2. 以 **`YYYY-MM-DD-slug.md`** 格式命名（**完整日期** + 英文 kebab slug），例如：`2026-04-15-ai-tips.md`
 3. 在檔案頂部填寫 frontmatter，再寫正文
 4. 儲存後 `git push`，Vercel 自動重新部署，文章即時上線
 
@@ -45,8 +45,8 @@ excerpt: 一句話介紹這篇文章，會顯示在網誌列表頁。
 ## 命名規則
 
 - 檔名即為文章的 URL slug
-- 例如 `2026-04-ai-tips.md` → 網址為 `/blog/2026-04-ai-tips`
-- 建議格式：`YYYY-MM-關鍵字.md`（英文 slug，中文不含空格）
+- 例如 `2026-04-15-ai-tips.md` → 網址為 `/blog/2026-04-15-ai-tips`
+- 建議格式：`YYYY-MM-DD-關鍵字.md`（英文 slug；`date` 與檔名日期一致，方便列表排序）
 
 ---
 

@@ -23,7 +23,7 @@ function formatDate(dateStr) {
 }
 
 export default function BlogPost({ post }) {
-  const isBreakingNewsPost = post.slug === '2026-03-notebooklm-custom-infographic-style-breaking-news'
+  const isBreakingNewsPost = post.slug === '2026-03-10-notebooklm-custom-infographic-style-breaking-news'
   const [carouselIndex, setCarouselIndex] = useState(0)
 
   const comparisonRows = [
