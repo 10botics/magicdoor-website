@@ -4,8 +4,8 @@ title: 【教學新突破🚀】學生字多不想看？教材一鍵變精美懶
 date: 2026-03-09
 excerpt: NotebookLM 一鍵生成 infographic，讓教學內容由長文瞬間轉為學生易吸收的視覺化懶人包。
 related:
-  - 2026-03-08-notebooklm-infographic-styles
   - 2026-03-10-notebooklm-custom-infographic-style-breaking-news
+  - 2026-03-03-notebooklm-9-features
 ---
 
 要把密密麻麻的教學內容，轉化為學生易吸收的教材，以往要花幾小時設計排版。現在，Google 的 NotebookLM 推出革命性功能——自動生成 infographic（資訊圖表）！資料整理與視覺設計，從此一氣呵成。

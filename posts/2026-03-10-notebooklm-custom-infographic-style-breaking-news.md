@@ -5,8 +5,8 @@ date: 2026-03-10
 excerpt: NotebookLM 美學革命：Infographic 自訂風格功能正式上線，老師可一鍵決定教材視覺風格，讓教學內容更易吸收、更有記憶點。
 coverImage: /notebooklm-custom-styles-cover.png
 related:
-  - 2026-03-08-notebooklm-infographic-styles
   - 2026-03-09-notebooklm-text-to-infographic
+  - 2026-03-03-notebooklm-9-features
 ---
 
 教學現場的遊戲規則再次被改寫！Google 旗下的 AI 研究助手 NotebookLM 剛剛發佈了重磅更新：資訊圖表（Infographic）自訂風格功能正式上線！

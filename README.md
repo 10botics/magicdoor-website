@@ -2,6 +2,12 @@
 
 Marketing website for [Magic Door](https://www.magicdoor.cc), built with **Next.js 14** and **Tailwind CSS**, deployed on **Vercel**.
 
+### Repository root (for humans and tooling)
+
+- **This folder (`website/`) is the Git repository root** — `.git` lives here, not in a parent directory such as `magic-door/`.
+- Run **`git status`**, **`git commit`**, and **`git push`** from **`website/`** (or use paths relative to this root). Sibling or parent folders may hold non-repo files (e.g. `business/marketing/`).
+- **Vercel** deploys from this repo; changes outside `website/` are not part of the deploy unless you use a different setup.
+
 ---
 
 ## Prerequisites
@@ -13,12 +19,14 @@ Marketing website for [Magic Door](https://www.magicdoor.cc), built with **Next.
 
 ## Local Development
 
-### 1. Clone the repo and enter the website directory
+### 1. Clone the repo and enter this directory
 
 ```bash
 git clone <repo-url>
-cd magic-door/website
+cd <repo-name>   # repo root = this website folder (same directory as package.json)
 ```
+
+If you keep the site inside a larger tree (e.g. `magic-door/website`), **`cd`** into the folder that contains **`.git`** — that is the directory this README describes.
 
 ### 2. Set up local environment variables
 
