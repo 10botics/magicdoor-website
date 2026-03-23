@@ -45,8 +45,6 @@ Google 剛於 2026 年 3 月 4 日為 [NotebookLM](https://notebooklm.google.com
 
 NotebookLM 是 Google 旗下的 AI 工具，在香港網絡環境下需要穩定的連線才能正常使用。Magic Door 用戶可直接透過擴充功能一鍵接通，無需任何額外設定。
 
-如果您還未試用 Magic Door，[立即申請免費試用](/trial)，體驗暢通無阻地使用 NotebookLM 及其他 AI 工具。
-
 ---
 
 *資料來源：[Google Blog](https://blog.google/innovation-and-ai/products/notebooklm/generate-your-own-cinematic-video-overviews-in-notebooklm/)、[The Verge](https://www.theverge.com/ai-artificial-intelligence/889475/notebooklm-can-now-summarize-research-in-cinematic-video-overviews)*

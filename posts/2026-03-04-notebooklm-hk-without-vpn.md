@@ -6,6 +6,7 @@ excerpt: NotebookLM 在香港受地區限制，不少老師第一反應是用 VP
 related:
   - 2026-03-02-notebooklm-intro-teachers-hk
   - 2026-03-05-notebooklm-google-workspace-hk
+  - 2026-03-06-notebooklm-enterprise-vs-consumer-hk
 ---
 
 Google 的 NotebookLM 是近年最受教育界討論的 AI 工具之一：上傳 PDF、網頁、影片，AI 即時整理摘要、生成語音概覽，幫老師省去大量備課時間。
@@ -78,3 +79,5 @@ Google 的 NotebookLM 是近年最受教育界討論的 AI 工具之一：上傳
 | 課堂大規模使用 | 不切實際 | 支援全校部署 |
 
 如果你是香港老師，想在課堂中穩定使用 NotebookLM，VPN 只是一個臨時方案。Magic Door 提供的，是一個可以真正在學校環境長期使用的解決方案。
+
+若果學校 IT 正評估 **Gemini Enterprise／NotebookLM Enterprise**，請留意：**企業版同消費者版係兩套產品**，功能同部署方式差好遠——可一併閱讀 **[學校買 Gemini Enterprise 就有完整 NotebookLM？功能對比後你可能會後悔](/blog/2026-03-06-notebooklm-enterprise-vs-consumer-hk)**。
