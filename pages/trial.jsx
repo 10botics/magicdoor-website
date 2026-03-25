@@ -7,6 +7,13 @@ const BLOCKED_DOMAINS = ['gmail.com', 'googlemail.com', 'hotmail.com', 'outlook.
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
+/** GTM dataLayer — marketing KPI: trial form API success (no PII). See business/marketing/analytics/CONVERSIONS_AND_GA4.md */
+function pushTrialDataLayer(payload) {
+  if (typeof window === 'undefined') return
+  window.dataLayer = window.dataLayer || []
+  window.dataLayer.push(payload)
+}
+
 function getEmailDomain(email) {
   const parts = email.split('@')
   return parts.length === 2 ? parts[1].toLowerCase() : ''
@@ -14,16 +21,15 @@ function getEmailDomain(email) {
 
 export default function TrialPage() {
   const [email, setEmail] = useState('')
-  const [checks, setChecks] = useState([false, false])
+  const [confirmed, setConfirmed] = useState(false)
   const [status, setStatus] = useState('idle') // idle | loading | success | error
   const [errorMsg, setErrorMsg] = useState('')
   const [emailError, setEmailError] = useState('')
 
   const domain = getEmailDomain(email)
   const isBlockedLocally = EMAIL_RE.test(email) && BLOCKED_DOMAINS.includes(domain)
-  const allChecked = checks.every(Boolean)
   const emailValid = EMAIL_RE.test(email) && !isBlockedLocally
-  const canSubmit = emailValid && allChecked && status !== 'loading'
+  const canSubmit = emailValid && confirmed && status !== 'loading'
 
   function handleEmailChange(e) {
     const val = e.target.value
@@ -35,10 +41,6 @@ export default function TrialPage() {
     } else if (EMAIL_RE.test(val) && BLOCKED_DOMAINS.includes(d)) {
       setEmailError('Gmail 及個人電郵帳號不受支援，請使用學校電郵。')
     }
-  }
-
-  function toggleCheck(i) {
-    setChecks(prev => prev.map((v, idx) => idx === i ? !v : v))
   }
 
   async function handleSubmit(e) {
@@ -56,6 +58,10 @@ export default function TrialPage() {
       const data = await res.json()
 
       if (res.ok) {
+        pushTrialDataLayer({
+          event: 'trial_request_success',
+          lead_method: 'trial_form_school_email',
+        })
         setStatus('success')
       } else if (data.status === 'domain_not_allowed') {
         setStatus('error')
@@ -121,27 +127,24 @@ export default function TrialPage() {
             )}
           </div>
 
-          {/* Declarations */}
-          <div className="space-y-4">
-            <p className="text-sm font-medium text-gray-700">聲明</p>
-            {[
-              '本人為香港教育局認可的中學或小學教學人員',
-              '本人承諾不會將 Magic Door 分享予機構以外的人士',
-            ].map((label, i) => (
-              <label key={i} className="flex items-start gap-3 cursor-pointer group">
-                <div className="mt-0.5 flex-shrink-0">
-                  <input
-                    type="checkbox"
-                    checked={checks[i]}
-                    onChange={() => toggleCheck(i)}
-                    className="w-4 h-4 rounded border-gray-300 text-gray-900 focus:ring-gray-400 cursor-pointer"
-                  />
-                </div>
-                <span className={`text-sm leading-relaxed ${checks[i] ? 'text-gray-900' : 'text-gray-500'}`}>
-                  {label}
-                </span>
-              </label>
-            ))}
+          {/* One gentle confirmation (backend only validates email) */}
+          <div className="space-y-3">
+            <p className="text-sm text-gray-600 leading-relaxed">
+              Magic Door 供香港中小學教學同工試用。請勾選以下一項，表示您了解試用帳號應在職責範圍內使用，並請勿將安裝連結隨意轉發予與校務無關的第三方。
+            </p>
+            <label className="flex items-start gap-3 cursor-pointer group">
+              <div className="mt-0.5 flex-shrink-0">
+                <input
+                  type="checkbox"
+                  checked={confirmed}
+                  onChange={() => setConfirmed((v) => !v)}
+                  className="w-4 h-4 rounded border-gray-300 text-gray-900 focus:ring-gray-400 cursor-pointer"
+                />
+              </div>
+              <span className={`text-sm leading-relaxed ${confirmed ? 'text-gray-900' : 'text-gray-600'}`}>
+                本人了解並同意上述說明
+              </span>
+            </label>
           </div>
 
           {/* Error message */}
@@ -164,9 +167,10 @@ export default function TrialPage() {
             {status === 'loading' ? '發送中…' : '發送安裝連結'}
           </button>
 
-          <p className="text-xs text-gray-400 text-center">
-            提交即表示您同意我們的{' '}
-            <a href="/terms" className="underline hover:text-gray-600">服務條款</a>。
+          <p className="text-xs text-gray-400 text-center leading-relaxed">
+            提交後，即表示您已閱讀並同意我們的{' '}
+            <a href="/terms" className="underline hover:text-gray-600">服務條款</a>
+            （當中包括試用與使用範圍的約定）。
           </p>
         </form>
       </div>

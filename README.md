@@ -103,6 +103,10 @@ Production URL: **https://www.magicdoor.cc**
 
 Environment variables for production are set in Vercel's project dashboard (not in `.env.production` for secrets).
 
+### Trial conversion → GA4 (GTM)
+
+On successful trial form submit, the site pushes a **GTM dataLayer** event `trial_request_success` (see `pages/trial.jsx`). Configure **Google Tag Manager** (`GTM-NSG23FCK`) and **GA4 key events** using the runbook next to the monorepo (from repo root: [`business/marketing/analytics/CONVERSIONS_AND_GA4.md`](../business/marketing/analytics/CONVERSIONS_AND_GA4.md)).
+
 ---
 
 ## Key Dependencies
