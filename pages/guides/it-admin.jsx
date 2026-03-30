@@ -2,6 +2,9 @@ import Layout from '../../components/Layout'
 import ImagePlaceholder from '../../components/ImagePlaceholder'
 import Link from 'next/link'
 
+/** Chrome Web Store item ID (same as download page listing). */
+const CHROME_EXTENSION_ID = 'akcaimdafkmgjlldooglonhapahdjapl'
+
 const steps = [
   {
     title: '登入 Google Workspace 管理控制台',
@@ -25,7 +28,9 @@ const steps = [
   },
   {
     title: '輸入擴充功能 ID',
-    description: '在彈出視窗中，將「來源」設為「Chrome 線上應用程式商店」，然後輸入 Magic Door 的擴充功能 ID，最後點擊「儲存」。如不清楚 ID，請聯絡我們的銷售團隊。',
+    description:
+      '在彈出視窗中，將「來源」設為「Chrome 線上應用程式商店」，於欄位中貼上或輸入下方擴充功能 ID，最後點擊「儲存」。',
+    extensionIdHighlight: true,
     image: { filename: 'guides/admin-05-add-extension.png', description: '加入 Magic Door 擴充功能並選擇來源' },
   },
   {
@@ -77,6 +82,16 @@ export default function ItAdminGuide() {
                 <div>
                   <h2 className="text-xl font-bold text-gray-900 mb-2">{step.title}</h2>
                   <p className="text-gray-500 leading-relaxed">{step.description}</p>
+                  {step.extensionIdHighlight ? (
+                    <figure className="mt-4 not-prose border-l-4 border-indigo-600 bg-indigo-50/80 rounded-r-lg pl-4 pr-4 py-3 shadow-sm">
+                      <figcaption className="text-xs font-semibold uppercase tracking-wider text-indigo-800 mb-2">
+                        Magic Door 擴充功能 ID
+                      </figcaption>
+                      <p className="font-mono text-base sm:text-lg text-gray-900 tracking-wide break-all select-all m-0">
+                        {CHROME_EXTENSION_ID}
+                      </p>
+                    </figure>
+                  ) : null}
                 </div>
               </div>
               <div className="ml-12">
